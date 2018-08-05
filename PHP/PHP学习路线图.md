@@ -1,14 +1,14 @@
 # PHP 学习路线图
 
-PHP学习的关键是：多看代码，多写代码，多总结。
+PHP 学习的关键是：多看代码，多写代码，多总结。
 
 ## HTML5 和 CSS
 
 > 推荐书籍《HTML5+CSS3从入门到精通》·李东博
 
-* HTML标签
-* CSS样式
-* Javascript脚本
+* HTML 标签
+* CSS 样式
+* Javascript 脚本
 
 ## PHP 基础
 
@@ -100,7 +100,7 @@ PHP学习的关键是：多看代码，多写代码，多总结。
 
 * Opcache
 * xDebug 调试和分析
-* Xhprof + Xhgui性能分析
+* Xhprof + Xhgui 性能分析
 * PHPUnit 单元测试
 * Docker LNMP 环境部署
 * 持续集成
