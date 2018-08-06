@@ -20,7 +20,7 @@
 
 #### [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。  
 <details>
-<summary><small>用法、配置</small></summary>
+* <summary>* 用法、配置</summary>
 
 ``` json
 {
