@@ -53,7 +53,7 @@
 * [React​JS](https://packagecontrol.io/packages/ReactJS) - 支持 React​。
 * [Vuejs Snippets](https://packagecontrol.io/packages/Vuejs%20Snippets) - 支持 Vue.js。
 * [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON) - 格式化 JSON。
- [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
+* [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
 
 ### PHP
 
@@ -130,9 +130,6 @@
 
 ## 配置
 
-<details>
-<summary>详情</summary>
-
 ``` json
 {
     "auto_complete_commit_on_tab": true,
@@ -166,7 +163,6 @@
     "word_wrap": true
 }
 ```
-</details>
 
 ## 快捷键
 
