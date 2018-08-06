@@ -45,7 +45,7 @@
   "format_on_save": true
 }
 ```
-<details>
+</details>
 
 * [Nodejs](https://packagecontrol.io/packages/Nodejs) - 支持 Node.js。
 * [j​Query](https://packagecontrol.io/packages/jQuery) - 支持 j​Query。
@@ -225,7 +225,7 @@
     * 输入当前项目中的文件名，快速搜索文件。
     * 输入 @ 和关键字，查找文件中函数名。（Ctrl+R）
     * 输入 - 和数字，跳转到文件中该行代码。（Ctrl+G）
-    * 输入 # 和关键字，查找变量名。 （Ctrl+ - ）
+    * 输入 # 和关键字，查找变量名。（Ctrl+ - ）
 * Ctrl+G - 打开搜索框，自动带 - ，输入数字跳转到该行代码。
 * Ctrl+R - 打开搜索框，自动带 @，输入关键字，查找文件中的函数名。
 * Ctrl+;- 打开搜索框，自动带 #，输入关键字，查找文件中的变量名、属性名等。
