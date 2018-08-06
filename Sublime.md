@@ -1,6 +1,6 @@
 # Sublime Text
 
-## 基础
+## 相关链接
 
 * [Sublime Text](http://www.sublimetext.com/) - 官网。
 * [Package Control Popular](https://packagecontrol.io/browse/popular) - 插件排行榜。
@@ -18,11 +18,11 @@
 
 ### Javascript
 
-* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
+#### [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
 
 
 <details>
-<summary>配置</summary>
+<summary>用法、配置</summary>
 
 ``` json
 {
@@ -47,13 +47,13 @@
 ```
 </details>
 
-* [Nodejs](https://packagecontrol.io/packages/Nodejs) - 支持 Node.js。
-* [j​Query](https://packagecontrol.io/packages/jQuery) - 支持 j​Query。
-* [Angular​JS](https://packagecontrol.io/packages/AngularJS) - 支持 Angular​。
-* [React​JS](https://packagecontrol.io/packages/ReactJS) - 支持 React​。
-* [Vuejs Snippets](https://packagecontrol.io/packages/Vuejs%20Snippets) - 支持 Vue.js。
-* [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON) - 格式化 JSON。
-* [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
+#### [Nodejs](https://packagecontrol.io/packages/Nodejs) - 支持 Node.js。
+#### [j​Query](https://packagecontrol.io/packages/jQuery) - 支持 j​Query。
+#### [Angular​JS](https://packagecontrol.io/packages/AngularJS) - 支持 Angular​。
+#### [React​JS](https://packagecontrol.io/packages/ReactJS) - 支持 React​。
+#### [Vuejs Snippets](https://packagecontrol.io/packages/Vuejs%20Snippets) - 支持 Vue.js。
+#### [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON) - 格式化 JSON。
+#### [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
 
 ### PHP
 
