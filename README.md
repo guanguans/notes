@@ -9,6 +9,7 @@
 
 * [PhpStorm](PhpStorm.md)
 * [Sublime](Sublime.md)
+* [Chrome](Chrome.md)
 
 ## License
 
