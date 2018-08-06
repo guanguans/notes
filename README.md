@@ -5,6 +5,11 @@
 
 * [PHP 学习路线图](PHP/PHP学习路线图.md)
 
+## 其他
+
+* [PhpStorm](PhpStorm.md)
+* [Sublime](Sublime.md)
+
 ## License
 
 [Apache License 2.0](./LICENSE)
