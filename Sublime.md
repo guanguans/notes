@@ -18,9 +18,11 @@
 
 ### Javascript
 
-#### [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。  
+#### [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <details>
-* <summary>* 用法、配置</summary>
+<summary>用法、配置</summary>
 
 ``` json
 {
