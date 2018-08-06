@@ -123,6 +123,8 @@
 * [Chinese​Localizations](https://packagecontrol.io/packages/ChineseLocalizations) - 汉化。
 * [Delete​Blank​Lines](https://packagecontrol.io/packages/DeleteBlankLines) - 从选择中删除空白行或多余的空格。
 * [Convert​To​UTF8](https://packagecontrol.io/packages/ConvertToUTF8) - 自动转换 UTF-8 编码。
+* [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter) - 匹配相对的符号高亮显示，比如 { }、[ ]。
+* [SublimeCodeInte](https://packagecontrol.io/packages/SublimeCodeIntel) - 代码提示、补全，支持 JavaScript、HTML、Ruby、Python3、Smarty、Node.js 和 PHP 等各种语言，是 Sublime Text 自带代码提示功能的很好扩展。
 
 
 ## 配置
