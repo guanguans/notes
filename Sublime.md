@@ -18,8 +18,8 @@
 
 ### Javascript
 
-* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
-* <details>
+* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。  
+<details>
 <summary>Javascript Beautify 用法及配置</summary>
 
 ``` json
@@ -59,8 +59,8 @@
 * [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) - 为 PHP 编码会话提供了很酷的东西。
 * [PHPIntel](https://packagecontrol.io/packages/PHPIntel) - 自动完成 PHP 函数和对象。
 * [Php​Doc](https://packagecontrol.io/packages/PhpDoc) - 支持 PhpDoc。
-* [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。
-* <details>
+* [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。  
+<details>
 <summary>phpfmt 用法及配置</summary>
 
 ``` json
