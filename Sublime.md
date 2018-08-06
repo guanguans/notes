@@ -19,8 +19,7 @@
 ### Javascript
 
 * [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
-
-<details>
+* <details>
 <summary>Javascript Beautify 用法及配置</summary>
 
 ``` json
@@ -61,8 +60,7 @@
 * [PHPIntel](https://packagecontrol.io/packages/PHPIntel) - 自动完成 PHP 函数和对象。
 * [Php​Doc](https://packagecontrol.io/packages/PhpDoc) - 支持 PhpDoc。
 * [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。
-
-<details>
+* <details>
 <summary>phpfmt 用法及配置</summary>
 
 ``` json
@@ -106,7 +104,7 @@
 * [JSONLint](https://packagecontrol.io/packages/JSONLint) - JSON Linter
 * [Pylint](https://packagecontrol.io/packages/Pylinter) - Python Linter
 
-### 其他
+### 其他插件
 
 * [Git](https://packagecontrol.io/packages/Git) - 支持 Git。
 * [SVN](https://packagecontrol.io/packages/SVN) - 支持 Subversion。
