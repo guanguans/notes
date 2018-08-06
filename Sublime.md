@@ -9,20 +9,19 @@
 
 ### HTML/CSS
 
-#### [HTML5](https://packagecontrol.io/packages/HTML5) - 支持 HTML5 片段和语法。
-#### [CSS3](https://packagecontrol.io/packages/CSS3) - 支持 CSS3。
-#### [Sass](https://packagecontrol.io/packages/Sass) - 支持 Sass 和 SCSS。
-#### [Bootstrap 3 Snippets](https://packagecontrol.io/packages/Bootstrap%203%20Snippets) - 支持 Bootstrap 3。
-#### [Bootstrap 4 Snippets](https://packagecontrol.io/packages/Bootstrap%204%20Snippets) - 支持 Bootstrap 4。
-#### [Emmet](HTML5) - 支持 Emmet。
+* [HTML5](https://packagecontrol.io/packages/HTML5) - 支持 HTML5 片段和语法。
+* [CSS3](https://packagecontrol.io/packages/CSS3) - 支持 CSS3。
+* [Sass](https://packagecontrol.io/packages/Sass) - 支持 Sass 和 SCSS。
+* [Bootstrap 3 Snippets](https://packagecontrol.io/packages/Bootstrap%203%20Snippets) - 支持 Bootstrap 3。
+* [Bootstrap 4 Snippets](https://packagecontrol.io/packages/Bootstrap%204%20Snippets) - 支持 Bootstrap 4。
+* [Emmet](HTML5) - 支持 Emmet。
 
 ### Javascript
 
-#### [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
+* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <details>
-<summary>用法、配置</summary>
+<summary>Javascript Beautify 用法及配置</summary>
 
 ``` json
 {
@@ -47,24 +46,24 @@
 ```
 </details>
 
-#### [Nodejs](https://packagecontrol.io/packages/Nodejs) - 支持 Node.js。
-#### [j​Query](https://packagecontrol.io/packages/jQuery) - 支持 j​Query。
-#### [Angular​JS](https://packagecontrol.io/packages/AngularJS) - 支持 Angular​。
-#### [React​JS](https://packagecontrol.io/packages/ReactJS) - 支持 React​。
-#### [Vuejs Snippets](https://packagecontrol.io/packages/Vuejs%20Snippets) - 支持 Vue.js。
-#### [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON) - 格式化 JSON。
-#### [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
+* [Nodejs](https://packagecontrol.io/packages/Nodejs) - 支持 Node.js。
+* [j​Query](https://packagecontrol.io/packages/jQuery) - 支持 j​Query。
+* [Angular​JS](https://packagecontrol.io/packages/AngularJS) - 支持 Angular​。
+* [React​JS](https://packagecontrol.io/packages/ReactJS) - 支持 React​。
+* [Vuejs Snippets](https://packagecontrol.io/packages/Vuejs%20Snippets) - 支持 Vue.js。
+* [Pretty JSON](https://packagecontrol.io/packages/Pretty%20JSON) - 格式化 JSON。
+* [HTML-CSS-JS Prettify](https://packagecontrol.io/packages/HTML-CSS-JS%20Prettify) - 格式化 HTML、CSS 和 JavaScript。
 
 ### PHP
 
-#### [Phpcs](https://packagecontrol.io/packages/Phpcs) - PHP 编码标准修复。
-#### [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) - 为 PHP 编码会话提供了很酷的东西。
-#### [PHPIntel](https://packagecontrol.io/packages/PHPIntel) - 自动完成 PHP 函数和对象。
-#### [Php​Doc](https://packagecontrol.io/packages/PhpDoc) - 支持 PhpDoc。
-#### [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。
+* [Phpcs](https://packagecontrol.io/packages/Phpcs) - PHP 编码标准修复。
+* [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) - 为 PHP 编码会话提供了很酷的东西。
+* [PHPIntel](https://packagecontrol.io/packages/PHPIntel) - 自动完成 PHP 函数和对象。
+* [Php​Doc](https://packagecontrol.io/packages/PhpDoc) - 支持 PhpDoc。
+* [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。
 
 <details>
-<summary>配置</summary>
+<summary>phpfmt 用法及配置</summary>
 
 ``` json
 {
@@ -80,52 +79,52 @@
 ```
 </details>
 
-#### [Apache​Conf](https://packagecontrol.io/packages/ApacheConf) - 支持 .htaccess 和 .conf 文件。
-#### [PHP Completions Kit](https://packagecontrol.io/packages/PHP%20Completions%20Kit) - PHP 自动完成。
-#### [PHP Syntax Checker](https://packagecontrol.io/packages/PHP%20Syntax%20Checker) - 检查 PHP 语法。
+* [Apache​Conf](https://packagecontrol.io/packages/ApacheConf) - 支持 .htaccess 和 .conf 文件。
+* [PHP Completions Kit](https://packagecontrol.io/packages/PHP%20Completions%20Kit) - PHP 自动完成。
+* [PHP Syntax Checker](https://packagecontrol.io/packages/PHP%20Syntax%20Checker) - 检查 PHP 语法。
 
 ### SublimeLinter
 
-#### [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
-#### [SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint) - es6 Linter
-#### [SublimeLinter-jshint](https://packagecontrol.io/packages/SublimeLinter-jshint) - Javascript Linter
-#### [SublimeLinter-html-tidy](https://packagecontrol.io/packages/SublimeLinter-html-tidy) - HTML Linter
-#### [SublimeLinter-haml](https://packagecontrol.io/packages/SublimeLinter-haml) - HAML Linter
-#### [SublimeLinter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint) - CSS Linter
-#### [SublimeLinter-json](https://packagecontrol.io/packages/SublimeLinter-json) - JSON Linter
-#### [SublimeLinter-php](https://packagecontrol.io/packages/SublimeLinter-php) - PHP Linter
-#### [SublimeLinter-pylint](https://packagecontrol.io/packages/SublimeLinter-pylint) - Python Linter
-#### [SublimeLinter-ruby](https://packagecontrol.io/packages/SublimeLinter-ruby) - Ruby Linter
-#### [SublimeLinter-contrib-java](https://packagecontrol.io/packages/SublimeLinter-contrib-java) - Java Linter
-#### [SublimeLinter-contrib-clang](https://packagecontrol.io/packages/SublimeLinter-contrib-clang) - C/C++ Linter
-#### [SublimeLinter-lua](https://packagecontrol.io/packages/SublimeLinter-lua) - Lua Linter
-#### [SublimeLinter-perl](https://packagecontrol.io/packages/SublimeLinter-contrib-perl) - Perl Linter
-#### [SublimeLinter-xmllint](https://packagecontrol.io/packages/SublimeLinter-xmllint) - XML Linter
-#### [SublimeLinter-contrib-rustc](https://packagecontrol.io/packages/SublimeLinter-contrib-rustc) - Rust Linter
-#### [jslint](https://packagecontrol.io/packages/JSLint) - Javascript Linter
-#### [CoffeeLint](https://packagecontrol.io/packages/CoffeeLint) - Coffeescript Linter
-#### [JSONLint](https://packagecontrol.io/packages/JSONLint) - JSON Linter
-#### [Pylint](https://packagecontrol.io/packages/Pylinter) - Python Linter
+* [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+* [SublimeLinter-eslint](https://packagecontrol.io/packages/SublimeLinter-contrib-eslint) - es6 Linter
+* [SublimeLinter-jshint](https://packagecontrol.io/packages/SublimeLinter-jshint) - Javascript Linter
+* [SublimeLinter-html-tidy](https://packagecontrol.io/packages/SublimeLinter-html-tidy) - HTML Linter
+* [SublimeLinter-haml](https://packagecontrol.io/packages/SublimeLinter-haml) - HAML Linter
+* [SublimeLinter-csslint](https://packagecontrol.io/packages/SublimeLinter-csslint) - CSS Linter
+* [SublimeLinter-json](https://packagecontrol.io/packages/SublimeLinter-json) - JSON Linter
+* [SublimeLinter-php](https://packagecontrol.io/packages/SublimeLinter-php) - PHP Linter
+* [SublimeLinter-pylint](https://packagecontrol.io/packages/SublimeLinter-pylint) - Python Linter
+* [SublimeLinter-ruby](https://packagecontrol.io/packages/SublimeLinter-ruby) - Ruby Linter
+* [SublimeLinter-contrib-java](https://packagecontrol.io/packages/SublimeLinter-contrib-java) - Java Linter
+* [SublimeLinter-contrib-clang](https://packagecontrol.io/packages/SublimeLinter-contrib-clang) - C/C++ Linter
+* [SublimeLinter-lua](https://packagecontrol.io/packages/SublimeLinter-lua) - Lua Linter
+* [SublimeLinter-perl](https://packagecontrol.io/packages/SublimeLinter-contrib-perl) - Perl Linter
+* [SublimeLinter-xmllint](https://packagecontrol.io/packages/SublimeLinter-xmllint) - XML Linter
+* [SublimeLinter-contrib-rustc](https://packagecontrol.io/packages/SublimeLinter-contrib-rustc) - Rust Linter
+* [jslint](https://packagecontrol.io/packages/JSLint) - Javascript Linter
+* [CoffeeLint](https://packagecontrol.io/packages/CoffeeLint) - Coffeescript Linter
+* [JSONLint](https://packagecontrol.io/packages/JSONLint) - JSON Linter
+* [Pylint](https://packagecontrol.io/packages/Pylinter) - Python Linter
 
 ### 其他
 
-#### [Git](https://packagecontrol.io/packages/Git) - 支持 Git。
-#### [SVN](https://packagecontrol.io/packages/SVN) - 支持 Subversion。
-#### [Sublime SFTP](https://wbond.net/sublime_packages/sftp) - 支持 FTP。
-#### [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) - 支持 Markdown​。
-#### [Markdown​Preview](https://packagecontrol.io/packages/MarkdownPreview) - 支持 Markdown​。
-#### [Side​Bar​Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) - 侧边栏增强。
-#### [Alignment](https://packagecontrol.io/packages/Alignment) - 对齐多个选项和多行选择。
-#### [AdvancedNewFile](https://packagecontrol.io/packages/AdvancedNewFile) - 高级文件创建。例如：允许在创建新文件时指定文件路径。
-#### [File​Diffs](https://packagecontrol.io/packages/FileDiffs) - 显示文件差异。
-#### [Trailing​Spaces](https://packagecontrol.io/packages/TrailingSpaces) - 高亮显示多余的空格和 Tab。
-#### [All Autocomplete](https://packagecontrol.io/packages/All%20Autocomplete) - 自动完成功能，在当前窗口的所有打开文件中查找匹配项。
-#### [Auto​File​Name](https://packagecontrol.io/packages/AutoFileName) - 自动完成文件名。
-#### [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr) - 快速编写注释。
-#### [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) - 显示文件图标。
-#### [Chinese​Localizations](https://packagecontrol.io/packages/ChineseLocalizations) - 汉化。
-#### [Delete​Blank​Lines](https://packagecontrol.io/packages/DeleteBlankLines) - 从选择中删除空白行或多余的空格。
-#### [Convert​To​UTF8](https://packagecontrol.io/packages/ConvertToUTF8) - 自动转换 UTF-8 编码。
+* [Git](https://packagecontrol.io/packages/Git) - 支持 Git。
+* [SVN](https://packagecontrol.io/packages/SVN) - 支持 Subversion。
+* [Sublime SFTP](https://wbond.net/sublime_packages/sftp) - 支持 FTP。
+* [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) - 支持 Markdown​。
+* [Markdown​Preview](https://packagecontrol.io/packages/MarkdownPreview) - 支持 Markdown​。
+* [Side​Bar​Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) - 侧边栏增强。
+* [Alignment](https://packagecontrol.io/packages/Alignment) - 对齐多个选项和多行选择。
+* [AdvancedNewFile](https://packagecontrol.io/packages/AdvancedNewFile) - 高级文件创建。例如：允许在创建新文件时指定文件路径。
+* [File​Diffs](https://packagecontrol.io/packages/FileDiffs) - 显示文件差异。
+* [Trailing​Spaces](https://packagecontrol.io/packages/TrailingSpaces) - 高亮显示多余的空格和 Tab。
+* [All Autocomplete](https://packagecontrol.io/packages/All%20Autocomplete) - 自动完成功能，在当前窗口的所有打开文件中查找匹配项。
+* [Auto​File​Name](https://packagecontrol.io/packages/AutoFileName) - 自动完成文件名。
+* [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr) - 快速编写注释。
+* [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) - 显示文件图标。
+* [Chinese​Localizations](https://packagecontrol.io/packages/ChineseLocalizations) - 汉化。
+* [Delete​Blank​Lines](https://packagecontrol.io/packages/DeleteBlankLines) - 从选择中删除空白行或多余的空格。
+* [Convert​To​UTF8](https://packagecontrol.io/packages/ConvertToUTF8) - 自动转换 UTF-8 编码。
 
 
 ## 配置
