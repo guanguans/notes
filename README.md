@@ -8,7 +8,8 @@
 
 ## MySQL
 
-* [MySQL 语法.md](MySQL/语法.md)
+* [MySQL 语法](MySQL/语法.md)
+* [MySQL 数据类型](MySQL/数据类型.md)
 
 ## 其他
 
