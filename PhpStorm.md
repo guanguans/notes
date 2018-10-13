@@ -29,7 +29,7 @@
 * **CodeGlance** - 类似于 Sublime 中的代码小地图
 * **Styled Components** - 利用标记的模板文字和 CSS 的强大功能，样式化组件允许您编写实际的 CSS 代码来设置组件样式
 
-## PHPStorm 快捷键大全（Win/Linux/Mac）
+## 快捷键（Win/Linux/Mac）
 
 下面的 ~ 符号记得改成 \`，markdown 语法会转义。使用频率是我自己为准。仅供参考
 
