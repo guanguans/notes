@@ -28,6 +28,9 @@
 * **String Manipulation** - 有好的操作字符串
 * **CodeGlance** - 类似于 Sublime 中的代码小地图
 * **Styled Components** - 利用标记的模板文字和 CSS 的强大功能，样式化组件允许您编写实际的 CSS 代码来设置组件样式
+* **Translation** - 最好用的翻译插件
+* **Key promoter** - 这款插件适合新手使用。当你点击鼠标一个功能的时候，可以提示你这个功能快捷键是什么。这是一个非常有用的功能，很快就可以熟悉软件的快捷功能了。 如果有快捷键的，会直接显示快捷键
+* **ApiDebugger** - 一个开源的接口调试插件
 
 ## 快捷键（Win/Linux/Mac）
 
