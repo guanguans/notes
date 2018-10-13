@@ -109,8 +109,9 @@
 * [Git](https://packagecontrol.io/packages/Git) - 支持 Git。
 * [SVN](https://packagecontrol.io/packages/SVN) - 支持 Subversion。
 * [Sublime SFTP](https://wbond.net/sublime_packages/sftp) - 支持 FTP。
-* [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) - 支持 Markdown​。
-* [Markdown​Preview](https://packagecontrol.io/packages/MarkdownPreview) - 支持 Markdown​。
+* [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) - 支持 Markdown。
+* [https://packagecontrol.io/packages/MarkdownHighlighting) - 对于Sublime Text 3，支持GFM的任何配色方案中的Markdown语法高亮显示。
+* [Markdown​TOC](https://packagecontrol.io/packages/MarkdownTOC) - 生成 Markdown 文档目录（TOC）。
 * [Side​Bar​Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) - 侧边栏增强。
 * [Alignment](https://packagecontrol.io/packages/Alignment) - 对齐多个选项和多行选择。
 * [AdvancedNewFile](https://packagecontrol.io/packages/AdvancedNewFile) - 高级文件创建。例如：允许在创建新文件时指定文件路径。
