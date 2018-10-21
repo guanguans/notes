@@ -126,6 +126,10 @@ endif
 " theme
 set background=dark
 colorscheme desert
+" colorscheme molokai
+" let g:molokai_original = 1
+" let g:rehash256 = 1
+
 
 " set mark column color
 hi! link SignColumn   LineNr
@@ -248,6 +252,9 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 ```
+## molokai 主题
+
+[安装 molokai 主题](https://github.com/tomasr/molokai)
 
 ## 原配置地址
 
