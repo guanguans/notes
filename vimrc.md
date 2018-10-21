@@ -1,5 +1,11 @@
 # 一份简单的没有插件的 vim 配置
 
+## molokai 主题
+
+如果习惯 molokai 主题，前往[https://github.com/tomasr/molokai](https://github.com/tomasr/molokai)
+
+![效果预览](./Docs/Images/Vim-molokai.png)
+
 ## .vimrc
 
 ``` bash
@@ -252,10 +258,7 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 ```
-## molokai 主题
-
-[安装 molokai 主题](https://github.com/tomasr/molokai)
 
 ## 原配置地址
 
-* [https://github.com/wklken/vim-for-server](https://github.com/wklken/vim-for-server) 
+* [https://github.com/wklken/vim-for-server](https://github.com/wklken/vim-for-server)
