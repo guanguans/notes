@@ -6,7 +6,7 @@
 
 * 别让脚趾头想事情，那是脑瓜子的职责
 * 让数据库多做她擅长的事:
-    * 尽量丌在数据库做运算
+    * 尽量不在数据库做运算
     * 复杂运算秱到程序端CPU
     * 尽可能简单应用MySQL
 * 举例: md5() / Order by Rand()
@@ -59,7 +59,7 @@
 
 ###  核心军规小结
 
-* 尽量丌在数据库做运算
+* 尽量不在数据库做运算
 * 控制单表数据量
 * 保持表身段苗条
 * 平衡范式不冗余
@@ -100,8 +100,8 @@
 * 存储
     * ENUM占用1字节，转为数值运算
     * SET视节点定，最多占用8字节
-    * 比较时需要加‘ 单引号(即使是数值)
-* 丼例
+    * 比较时需要加' 单引号(即使是数值)
+* 举例
     * `sex` enum('F','M') COMMENT '性别'
     * `c1` enum('0','1','2','3') COMMENT '职介审核'
 
@@ -129,7 +129,7 @@
 ``` sql
 CREATE TABLE t1 (
 id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
-‏)PRIMARY KEY (id
+‏PRIMARY KEY id
 ) ENGINE=InnoDB;
 ```
 
@@ -139,7 +139,7 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
 
 * 用好数值字段类型
 * 将字符转化为数字
-* 优先使用枚丼ENUM/SET
+* 优先使用枚举ENUM/SET
 * 避免使用NULL字段
 * 少用幵拆分TEXT/BLOB
 * 不在数据库里存图片
@@ -151,10 +151,10 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
 * 谨慎合理添加索引
     * 改善查询
     * 减慢更新
-    * 索引丌是赹多赹好
+    * 索引不是赹多赹好
 * 能不加的索引尽量不加
     * 综合评估数据密度和数据分布
-    * 最好丌赸过字段数20%
+    * 最好不赸过字段数20%
 * 结合核心SQL优先考虑覆盖索引
 * 举例
     * 不要给“性别”列创建索引
@@ -169,13 +169,14 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
 * 字符字段必须建前缀索引:
 
 ``` sql
+(
 `pinyin` varchar(100) DEFAULT NULL COMMENT '小区拼音', KEY `idx_pinyin` (`pinyin`(8)),
 ) ENGINE=InnoDB
 ```
 
 ### 不在索引列做运算
 
-* 丌在索引列进行数学运算或凼数运算
+* 不在索引列进行数学运算或凼数运算
     * 无法使用索引
     * 导致全表扫描
 * 举例:
@@ -189,7 +190,7 @@ GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 D
 
 * 对主键建立聚簇索引
 * 二级索引存储主键值
-* 主键丌应更新修改
+* 主键不应更新修改
 * 按自增顺序揑入值
 * 忌用字符串做主键
 * 聚簇索引分裂
@@ -202,7 +203,7 @@ GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 D
     * 外键可节省开发量
     * 有额外开销
     * 逐行操作
-    * 可‘到达’其它表，意味着锁
+    * 可'到达'其它表，意味着锁
     * 高并发时容易死锁
 * 由程序保证约束
 
@@ -247,19 +248,19 @@ GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 D
     * 减用使用MySQL凼数对结果进行处理
 * 由客户端程序负责
 
-### 尽量丌用 SELECT *
+### 尽量不用 SELECT *
 
 * 用SELECT * 时
 * 更多消耗CPU、内存、IO、网络带宽
-* 先向数据库请求所有列，然后丢掉丌需要列?
+* 先向数据库请求所有列，然后丢掉不需要列?
 * 尽量不用SELECT * ，叧取需要数据列 • 更安全的设计:减少表变化带来的影响
 * 为使用covering index提供可能性
 * SELECT/JOIN减少硬盘临时表生成，特别是有TEXT/BLOB时
 * 举例:
 
 ``` sql
-SELECT * FROM tag WHERE id = 999184
-SELECT keyword FROM tag WHERE id = 999184
+SELECT * FROM tag WHERE id = 999184;
+SELECT keyword FROM tag WHERE id = 999184;
 ```
 
 ### 改写OR为IN()
@@ -272,8 +273,8 @@ SELECT keyword FROM tag WHERE id = 999184
 * 举例:
 
 ``` sql
-SELECT * from opp WHERE phone=‘12347856' or phone=‘42242233' \G
-SELECT * from opp WHERE phone in ('12347856' , '42242233')
+SELECT * from opp WHERE phone='12347856' or phone='42242233' \G;
+SELECT * from opp WHERE phone in ('12347856' , '42242233');
 ```
 
 ### 改写OR为UNION
@@ -295,7 +296,7 @@ SELECT * from opp WHERE phone='010-88886666' union SELECT * from opp WHERE cellP
     * NOT、!=、<>、!<、!>、NOT EXISTS、NOT IN、 NOT LIKE等
 * 避免 % 前缀模糊查询
     * B+ Tree
-    * 使用丌了索引
+    * 使用不了索引
     * 导致全表扫描
 * 举例:
 
@@ -353,12 +354,12 @@ SELECT * from post WHERE title like '%北京%'; -- 572 rows in set (3.27 sec)
 * 示例:
 
 ``` sql
-MySQL> select sql_no_cache * from post limit 10,10; 10 row in set (0.01 sec)
-MySQL> select sql_no_cache * from post limit 20000,10; 10 row in set (0.13 sec)
-MySQL> select sql_no_cache * from post limit 80000,10; 10 rows in set (0.58 sec)
-MySQL> select sql_no_cache id from post limit 80000,10; 10 rows in set (0.02 sec)
-MySQL> select sql_no_cache * from post WHERE id>=323423 limit 10; 10 rows in set (0.01 sec)
-MySQL> select * from post WHERE id >= ( select sql_no_cache id from post limit 80000,1 ) limit 10; 10 rows in set (0.02 sec)
+MySQL> SELECT sql_no_cache * from post limit 10,10; 10 row in set (0.01 sec)
+MySQL> SELECT sql_no_cache * from post limit 20000,10; 10 row in set (0.13 sec)
+MySQL> SELECT sql_no_cache * from post limit 80000,10; 10 rows in set (0.58 sec)
+MySQL> SELECT sql_no_cache id from post limit 80000,10; 10 rows in set (0.02 sec)
+MySQL> SELECT sql_no_cache * from post WHERE id>=323423 limit 10; 10 rows in set (0.01 sec)
+MySQL> SELECT * from post WHERE id >= ( SELECT sql_no_cache id from post limit 80000,1 ) limit 10; 10 rows in set (0.02 sec)
 ```
 
 ### 用UNION ALL 而非 UNION
@@ -368,12 +369,12 @@ MySQL> select * from post WHERE id >= ( select sql_no_cache id from post limit 8
 * 举例:
 
 ``` sql
-MySQL>SELECT * FROM detail20091128 UNION ALL SELECT * FROM detail20110427 UNION ALL SELECT * FROM detail20110426 UNION ALL SELECT * FROM detail20110425 UNION ALL SELECT * FROM detail20110424 UNION ALL SELECT * FROM detail20110423;
+SELECT * FROM detail20091128 UNION ALL SELECT * FROM detail20110427 UNION ALL SELECT * FROM detail20110426 UNION ALL SELECT * FROM detail20110425 UNION ALL SELECT * FROM detail20110424 UNION ALL SELECT * FROM detail20110423;
 ```
 
 ### 分解联接保证高并发
 
-* 高幵发DB丌建议进行两个表以上的JOIN
+* 高幵发DB不建议进行两个表以上的JOIN
 * 适当分解联接保证高幵发
     * 可缓存大量早期数据
     * 使用了多个MyISAM表
@@ -382,11 +383,11 @@ MySQL>SELECT * FROM detail20091128 UNION ALL SELECT * FROM detail20110427 UNION 
     * 举例:
 
 ``` sql
-MySQL> Select * from tag JOIN post on tag_post.post_id=post.id WHERE tag.tag=‘二手玩具’;
+MySQL> SELECT * from tag JOIN post on tag_post.post_id=post.id WHERE tag.tag='二手玩具';
 
-MySQL> Select * from tag WHERE tag=‘二手玩具’;
-MySQL> Select * from tag_post WHERE tag_id=1321;
-MySQL> Select * from post WHERE post.id in (123,456,314,141);
+MySQL> SELECT * from tag WHERE tag='二手玩具';
+MySQL> SELECT * from tag_post WHERE tag_id=1321;
+MySQL> SELECT * from post WHERE post.id in (123,456,314,141);
 ```
 
 ### GROUP BY 去除排序
@@ -399,8 +400,8 @@ MySQL> Select * from post WHERE post.id in (123,456,314,141);
 * 举例:
 
 ``` sql
-MySQL> select phone,count(*) from post group by phone limit 1 ; 1 row in set (2.19 sec)
-MySQL> select phone,count(*) from post group by phone order by null limit 1; 1 row in set (2.02 sec)
+MySQL> SELECT phone,count(*) from post group by phone limit 1 ; 1 row in set (2.19 sec)
+MySQL> SELECT phone,count(*) from post group by phone order by null limit 1; 1 row in set (2.02 sec)
 ```
 
 ### 同数据类型的列值比较
@@ -460,7 +461,7 @@ update post set tag=1 WHERE id in (4,5,6); sleep 0.01;
 * SQL语句尽可能简单
 * 保持事务(连接)短小
 * 尽可能避免使用SP/TRIG/FUNC
-* 尽量丌用 SELECT *
+* 尽量不用 SELECT *
 * 改写OR语句
 * 避免负向查询和% 前缀模糊查询
 * 减少COUNT(*)
@@ -493,10 +494,10 @@ update post set tag=1 WHERE id in (4,5,6); sleep 0.01;
 * 举例:
 
 ``` sql
-MySQL> select * from table1 where id id from table2) in (select insert into table1 (select * from table2); -- 可能导致复制异常
+SELECT * from table1 where id id from table2) in (SELECT insert into table1 (SELECT * from table2); -- 可能导致复制异常
 ```
 
-### 永远丌在程序端显式加锁
+### 永远不在程序端显式加锁
 
 * 永远不在程序端对数据库显式加锁
     * 外部锁对数据库不可控
@@ -523,7 +524,7 @@ MySQL> select * from table1 where id id from table2) in (select insert into tabl
 * 库表等名称统一用小写
     * Linux VS Windows
     * MySQL库表大小写敏感
-    * 字段名的大小写丌敏感
+    * 字段名的大小写不敏感
 * 索引命名默认为“idx_字段名”
 * 库名用缩写，尽量在2~7个字母
     * DataSharing ==> ds
@@ -535,216 +536,214 @@ MySQL> select * from table1 where id id from table2) in (select insert into tabl
 * 举例:
 
 ``` sql
-Select * from return;
-Select * from `return`;
+SELECT * from return;
+SELECT * from `return`;
 ```
 
 <details>
 <summary><b>MySQL系统关键字</b></summary>
-``` sql
-ADD
-ALL
-ALTER GOTO
-GRANT
-GROUP
-PURGE
-RAID0
-RANGE
-ANALYZE
-AND
-AS HAVING
-HIGH_PRIORIT Y
-HOUR_MICROSEC OND
-READ
-READS
-REAL
-ASC
-ASENSITIVE
-BEFORE HOUR_MINUTE
-HOUR_SECON D
-IF
-REFERENCES
-REGEXP
-RELEASE
-BETWEEN
-BIGINT
-BINARY IGNORE
-IN
-INDEX
-RENAME
-REPEAT
-REPLACE
-BLOB
-BOTH
-BY INFILE
-INNER
-INOUT
-REQUIRE
-RESTRICT
-RETURN
-CALL
-CASCADE
-CASE INSENSITIVE
-INSERT
-INT
-REVOKE
-RIGHT
-RLIKE
-CHANGE
-CHAR
-CHARACTER INT1
-INT2
-INT3
-SCHEMA
-SCHEMAS
-SECOND_MICROSEC OND
-CHECK
-COLLATE
-COLUMN INT4
-INT8
-INTEGER
-SELECT
-SENSITIVE
-SEPARATOR
-CONDITION
-CONNECTION
-CONSTRAINT INTERVAL
-INTO
-IS
-SET
-SHOW
-SMALLINT
-CONTINUE
-CONVERT
-CREATE ITERATE
-JOIN
-KEY
-SPATIAL
-SPECIFIC
-SQL
-CROSS
-CURRENT_DA TE
-CURRENT_TIM KEYS E
-KILL
-LABEL
-SQLEXCEPTION
-SQLSTATE
-SQLWARNING
-CURRENT_TIMESTA MP
-CURRENT_US ER
-CURSOR LEADING
-LEAVE
-LEFT
-SQL_BIG_RESUL T
-SQL_CALC_FOUND_R OWS
-SQL_SMALL_RESULT
-DATABASE
-DATABASES
-DAY_HOUR LIKE
-LIMIT
-LINEAR
-SSL
-STARTING
-STRAIGHT_JOIN
-DAY_MICROSECON D
-DAY_MINUTE
-DAY_SECOND LINES
-LOAD
-LOCALTIME
-TABLE
-TERMINATED
-THEN
-DEC
-DECIMAL
-DECLARE LOCALTIMESTAMP
-LOCK
-LONG
-TINYBLOB
-TINYINT
-TINYTEXT
-DEFAULT
-DELAYED
-DELETE LONGBLOB
-LONGTEXT
-LOOP
-TO
-TRAILING
-TRIGGER
-DESC
-DESCRIBE
-DETERMINISTI LOW_PRIORITY C
-MATCH
-MEDIUMBLOB
-TRUE
-UNDO
-UNION
-DISTINCT
-DISTINCTROW
-DIV MEDIUMINT
-MEDIUMTEXT
-MIDDLEINT
-UNIQUE
-UNLOCK
-UNSIGNED
-DOUBLE
-DROP
-DUAL
-MINUTE_MICROSECO ND
-MINUTE_SECO ND
-MOD
-UPDATE
-USAGE
-USE
-EACH
-ELSE
-ELSEIF MODIFIES
-NATURAL
-NOT
-USING
-UTC_DATE
-UTC_TIME
-ENCLOSED
-ESCAPED
-EXISTS
-NO_WRITE_TO_BINL OG
-NULL
-NUMERIC
-UTC_TIMESTAM P
-VALUES
-VARBINARY
-EXIT
-EXPLAIN
-FALSE ON
-OPTIMIZE
-OPTION
-VARCHAR
-VARCHARACTER
-VARYING
-FETCH
-FLOAT
-FLOAT4 OPTIONALLY
-OR
-ORDER
-WHEN
-WHERE
-WHILE
-FLOAT8
-FOR
-FORCE OUT
-OUTER
-OUTFILE
-WITH
-WRITE
-X509
-FOREIGN
-FROM
-FULLTEXT PRECISION
-PRIMARY
-PROCEDURE
-XOR
-YEAR_MONTH
-ZEROFILL
-```
+* ADD
+* ALL
+* ALTER GOTO
+* GRANT
+* GROUP
+* PURGE
+* RAID0
+* RANGE
+* ANALYZE
+* AND
+* AS HAVING
+* HIGH_PRIORIT Y
+* HOUR_MICROSEC OND
+* READ
+* READS
+* REAL
+* ASC
+* ASENSITIVE
+* BEFORE HOUR_MINUTE
+* HOUR_SECON D
+* IF
+* REFERENCES
+* REGEXP
+* RELEASE
+* BETWEEN
+* BIGINT
+* BINARY IGNORE
+* IN
+* INDEX
+* RENAME
+* REPEAT
+* REPLACE
+* BLOB
+* BOTH
+* BY INFILE
+* INNER
+* INOUT
+* REQUIRE
+* RESTRICT
+* RETURN
+* CALL
+* CASCADE
+* CASE INSENSITIVE
+* INSERT
+* INT
+* REVOKE
+* RIGHT
+* RLIKE
+* CHANGE
+* CHAR
+* CHARACTER INT1
+* INT2
+* INT3
+* SCHEMA
+* SCHEMAS
+* SECOND_MICROSEC OND
+* CHECK
+* COLLATE
+* COLUMN INT4
+* INT8
+* INTEGER
+* SELECT
+* SENSITIVE
+* SEPARATOR
+* CONDITION
+* CONNECTION
+* CONSTRAINT INTERVAL
+* INTO
+* IS
+* SET
+* SHOW
+* SMALLINT
+* CONTINUE
+* CONVERT
+* CREATE ITERATE
+* JOIN
+* KEY
+* SPATIAL
+* SPECIFIC
+* SQL
+* CROSS
+* CURRENT_DA TE
+* CURRENT_TIM KEYS E
+* KILL
+* LABEL
+* SQLEXCEPTION
+* SQLSTATE
+* SQLWARNING
+* CURRENT_TIMESTA MP
+* CURRENT_US ER
+* CURSOR LEADING
+* LEAVE
+* LEFT
+* SQL_BIG_RESUL T
+* SQL_CALC_FOUND_R OWS
+* SQL_SMALL_RESULT
+* DATABASE
+* DATABASES
+* DAY_HOUR LIKE
+* LIMIT
+* LINEAR
+* SSL
+* STARTING
+* STRAIGHT_JOIN
+* DAY_MICROSECON D
+* DAY_MINUTE
+* DAY_SECOND LINES
+* LOAD
+* LOCALTIME
+* TABLE
+* TERMINATED
+* THEN
+* DEC
+* DECIMAL
+* DECLARE LOCALTIMESTAMP
+* LOCK
+* LONG
+* TINYBLOB
+* TINYINT
+* TINYTEXT
+* DEFAULT
+* DELAYED
+* DELETE LONGBLOB
+* LONGTEXT
+* LOOP
+* TO
+* TRAILING
+* TRIGGER
+* DESC
+* DESCRIBE
+* DETERMINISTI LOW_PRIORITY C
+* MATCH
+* MEDIUMBLOB
+* TRUE
+* UNDO
+* UNION
+* DISTINCT
+* DISTINCTROW
+* DIV MEDIUMINT
+* MEDIUMTEXT
+* MIDDLEINT
+* UNIQUE
+* UNLOCK
+* UNSIGNED
+* DOUBLE
+* DROP
+* DUAL
+* MINUTE_MICROSECO ND
+* MINUTE_SECO ND
+* MOD
+* UPDATE
+* USAGE
+* USE
+* EACH
+* ELSE
+* ELSEIF MODIFIES
+* NATURAL
+* NOT
+* USING
+* UTC_DATE
+* UTC_TIME
+* ENCLOSED
+* ESCAPED
+* EXISTS
+* NO_WRITE_TO_BINL OG
+* NULL
+* NUMERIC
+* UTC_TIMESTAM P
+* VALUES
+* VARBINARY
+* EXIT
+* EXPLAIN
+* FALSE ON
+* OPTIMIZE
+* OPTION
+* VARCHAR
+* VARCHARACTER
+* VARYING
+* FETCH
+* FLOAT
+* FLOAT4 OPTIONALLY
+* OR
+* ORDER
+* WHEN
+* WHERE
+* WHILE
+* FLOAT8
+* FOR
+* FORCE OUT
+* OUTER
+* OUTFILE
+* WITH
+* WRITE
+* X509
+* FOREIGN
+* FROM
+* FULLTEXT PRECISION
+* PRIMARY
+* PROCEDURE
+* XOR
+* YEAR_MONTH
+* ZEROFILL
 </details>
 
 ### 约定类军规小结
