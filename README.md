@@ -10,6 +10,7 @@
 
 * [MySQL 语法](MySQL/语法.md)
 * [MySQL 数据类型](MySQL/数据类型.md)
+* [MySQL 数据库开发的三十六条军规](MySQL/MySQL数据库开发的三十六条军规.md)
 
 ## Git
 
@@ -20,6 +21,8 @@
 * [PhpStorm](PhpStorm.md)
 * [Sublime](Sublime.md)
 * [Chrome](Chrome.md)
+* [Select-license](Select-license.md)
+* [Vimrc](Vimrc.md)
 
 ## License
 
