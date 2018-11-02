@@ -1,4 +1,4 @@
-# Mac
+# macOS
 
 ## [使我的macOS体验更加惊人的应用程序和工具列表](https://github.com/nikitavoloboev/my-mac-os)
 
