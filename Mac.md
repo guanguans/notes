@@ -1,5 +1,11 @@
 # Mac
 
+## [使我的macOS体验更加惊人的应用程序和工具列表](https://github.com/nikitavoloboev/my-mac-os)
+
+## [在macOS上安装开发环境](https://github.com/sb2nov/mac-setup)
+
+## [我的macOS配置文件](https://github.com/nikitavoloboev/dotfiles)
+
 ## 命令行增强
 
 过去这些年我的命令行本领在逐步加强，我经常会去搜寻工作中能用的更好的命令行工具。下面就是我现在使用的用于增强原有命令行工具的列表。
