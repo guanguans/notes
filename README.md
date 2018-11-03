@@ -25,6 +25,7 @@
 * [Vimrc](Vimrc.md)
 * [macOS](macOS.md)
 * [iOS](iOS.md)
+* [Shell](Shell.md)
 
 ## License
 
