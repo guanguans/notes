@@ -31,6 +31,7 @@
 * **Translation** - 最好用的翻译插件
 * **Key promoter** - 这款插件适合新手使用。当你点击鼠标一个功能的时候，可以提示你这个功能快捷键是什么。这是一个非常有用的功能，很快就可以熟悉软件的快捷功能了。 如果有快捷键的，会直接显示快捷键
 * **ApiDebugger** - 一个开源的接口调试插件
+* **[SmartQQ](https://github.com/Jamling/SmartQQ4IntelliJ)** - QQ、Wechat
 
 ## 快捷键（Win/Linux/Mac）
 
