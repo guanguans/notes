@@ -2,6 +2,8 @@
 
 ## [Git Commit message 和 Change log 编写指南](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 
+## [Commitizen 的安装和使用](https://www.jianshu.com/p/d264f88d13a4)
+
 ## 新建代码库
 
 ``` bash
