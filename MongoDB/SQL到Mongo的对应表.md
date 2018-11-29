@@ -30,3 +30,15 @@
 |UPDATE users SET a=1 WHERE b='q'       |$db->users->update(array("b" => "q"), array('$set' => array("a" => 1)));       |
 |UPDATE users SET a=a+2 WHERE b='q'       |$db->users->update(array("b" => "q"), array('$inc' => array("a" => 2)));       |
 |DELETE FROM users WHERE z="abc"       |$db->users->remove(array("z" => "abc"));       |
+
+
+## 内嵌、引用选择
+
+| 更适合内嵌 | 更适合引用 |
+| --- | --- |
+| 子文档较小 | 子文档较大 |
+| 数据不会定期改变 | 数据经常改变 |
+| 最终数据一致即可 | 中间阶段的数据必须一致 |
+| 文档数据小幅增加 | 文档数据大幅增加 |
+| 数据通常需要执行二次查询才能获得 | 数据通常不包含在结果中 |
+| 快速读取 | 快速写入 |
