@@ -35,6 +35,7 @@
 * [macOS](macOS.md)
 * [iOS](iOS.md)
 * [Shell](Shell.md)
+* [Vscode](Vscode.md)
 
 ## License
 
