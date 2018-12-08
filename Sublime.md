@@ -18,7 +18,7 @@
 
 ### Javascript
 
-* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。  
+* [Javascript Beautify](https://packagecontrol.io/packages/Javascript%20Beautify) - 格式化 Javascript。
 <details>
 <summary>Javascript Beautify 用法及配置</summary>
 
@@ -59,7 +59,7 @@
 * [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) - 为 PHP 编码会话提供了很酷的东西。
 * [PHPIntel](https://packagecontrol.io/packages/PHPIntel) - 自动完成 PHP 函数和对象。
 * [Php​Doc](https://packagecontrol.io/packages/PhpDoc) - 支持 PhpDoc。
-* [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。  
+* [phpfmt](https://packagecontrol.io/packages/phpfmt) - 格式化 PHP。
 <details>
 <summary>phpfmt 用法及配置</summary>
 
@@ -132,35 +132,35 @@
 
 ``` json
 {
-    "auto_complete_commit_on_tab": true,
-    "auto_complete_delay": 0,
-    "auto_complete_with_fields": true,
-    "color_scheme": "Packages/Solarized Color Scheme/Solarized (light).tmTheme",
-    "create_window_at_startup": false,
-    "draw_white_space": "all",
-    "ensure_newline_at_eof_on_save": true,
-    "font_face": "Input Sans Narrow",
-    "font_size": 15,
-    "highlight_line": true,
-    "ignored_packages":
-    [
-        "CSS",
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_normal",
-        "draw_active"
-    ],
-    "indent_to_bracket": true,
-    "rulers":
-    [
-        80
-    ],
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": true
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_delay": 0,
+	"auto_complete_with_fields": true,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"create_window_at_startup": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Input Sans Narrow",
+	"font_size": 13,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"CSS",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"indent_to_bracket": true,
+	"rulers":
+	[
+		80
+	],
+	"tab_size": 4,
+	"theme": "Default.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true
 }
 ```
 
