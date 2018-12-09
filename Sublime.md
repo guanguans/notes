@@ -130,6 +130,71 @@
 
 ## 配置
 
+### sublime2
+
+``` json
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/monokai-extended/Monokai Extended.tmTheme",
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 13.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+	],
+	"remember_open_files": false,
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true,
+	"vintage_start_in_command_mode": false,
+	"vintage_use_clipboard": true,
+	"word_wrap": true
+}
+```
+### subloime3
+
+``` json
+{
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/monokai-extended/Monokai Extended.tmTheme",
+	"drag_text": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Source Code Pro",
+	"font_size": 13.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"scroll_past_end": true,
+	"show_definitions": false,
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true,
+	"vintage_start_in_command_mode": false,
+	"vintage_use_clipboard": true,
+	"word_wrap": true
+}
+```
+
+### sublime3(废弃)
+
 ``` json
 {
 	"auto_complete_commit_on_tab": true,
