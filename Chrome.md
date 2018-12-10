@@ -47,6 +47,7 @@
 * **[马克飞象【强烈推荐】](https://chrome.google.com/webstore/detail/marxico/kidnkfckhbdkfgbicccmdggmpgogehop?utm_source=chrome-app-launcher-info-dialog)** - 强大的Markdown离线编辑器，专为印象笔记打造。
 * **[Vysor](https://chrome.google.com/webstore/detail/vysor/gidgenkbbabolejbgbpnhbimgjbffefm?utm_source=chrome-app-launcher-info-dialog)** - 在浏览器上操作 Android 手机。
 * **[Draw.io Desktop【强烈推荐】](https://chrome.google.com/webstore/detail/drawio-desktop/pebppomjfocnoigkeepgbmcifnnlndla?utm_source=chrome-app-launcher-info-dialog)** - Draw.io是一个完全免费的图表编辑器，画流程图特别方便，强烈推荐！！！。
+* **[Dark Reader【强烈推荐】](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?utm_source=chrome-ntp-icon)** - 这是一个护眼扩展程序，通过实时生成黑色主题，为每一个网站启用夜间模式。
 
 ## 油猴脚本
 
