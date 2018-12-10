@@ -24,6 +24,7 @@
 ## Git
 
 * [常用 Git 命令清单](Git/常用Git命令清单.md)
+* [git commit message 和 Change log](Git/git-commit-message-change-log.md)
 
 ## 其他
 
