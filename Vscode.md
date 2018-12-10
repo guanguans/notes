@@ -5,6 +5,7 @@
 ``` json
 {
     "workbench.colorTheme": "Monokai",
+    "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe", // 终端在 Windows 上使用的 Shell 的路径。
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
