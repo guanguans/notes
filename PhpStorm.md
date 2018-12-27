@@ -33,6 +33,7 @@
 * **ApiDebugger** - 一个开源的接口调试插件
 * **[SmartQQ](https://github.com/Jamling/SmartQQ4IntelliJ)** - QQ、Wechat
 * **[PHP Annotations](https://github.com/Haehnchen/idea-php-annotation-plugin)** - PhpStorm 注释
+* **[BrowseWordAtCaret](https://plugins.jetbrains.com/plugin/201-browsewordatcaret)** - 高亮选中词语
 
 ## 优化 PhpStorm 速度
 
@@ -274,4 +275,3 @@ PHPstorm 的一大问题就是太强大了，默认加了很多功能，而我�
 | Ctrl + ~ | ⌃~ | 快速切换主题 | ★☆☆☆☆ |
 | Ctrl + Alt + S | ⌘, | 打开设置窗口 | ★☆☆☆☆ |
 | Ctrl + Tab | ⌃+Tab | 切换活动文件 | ★★★★★ |
-
