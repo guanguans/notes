@@ -33,6 +33,7 @@
 ## 其他
 
 * [有哪些鲜为人知，但是很有意思的网站？](Useful-website.md)
+* [Mac 安装中文版 man 帮助命令](mac-man-cn.md)
 * [PhpStorm](PhpStorm.md)
 * [Sublime](Sublime.md)
 * [Chrome](Chrome.md)
