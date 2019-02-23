@@ -5,119 +5,120 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>新闻详情</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-	<!----------------头部----------------->
-	<header id="header">
-		<div class="header container">
-			<div class="logo">
-				<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" title="VCARE"></a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li>
-						<a href="index.html">首页</a>
-					</li>
-					<li>
-						<a href="news-information.html" class="active">新闻中心</a>
-					</li>
-				</ul>
-				<div class="select-ip visible-lg">
-					<input type="text" placeholder="搜索" />
-					<span></span>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-inverse visible-xs" role="banner">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" class="img-responsive" alt="">
-					</a>
-				</div>
+	<div id="app">
+		<header id="header">
+			<div class="header container">
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="index.html">首页</a>
-						</li>
-						<li>
-							<a href="news-information.html" class="active">新闻中心</a>
+							<a href="list.html" class="active">列表</a>
 						</li>
 					</ul>
+					<div class="select-ip visible-lg">
+						<input type="text" placeholder="搜索" />
+						<span></span>
+					</div>
 				</div>
 			</div>
-			<!--/.container-->
-		</nav>
-		<!--/nav-->
-	</header>
-	<!----------------头部结束----------------->
-	<!-----------内容开始---------->
-	<div class="section">
-		<div class="container conter-ming">
-			<div class="col-xs-12 col-sm-12 col-md-12 right-infor">
-				<div class="infor-conter">
-					<div class="crumbs">
-						<a href="index.html">首页</a>>
-						<a href="news-information.html">新闻动态</a>>
-						<a href="news-information.html">武陵山智能终端产业园项目签约仪式</a>
-					</div>
-					<div class="detail-min">
-						<div class="detail-tit">
-							武陵山智能终端产业园项目签约仪式
+		</header>
+		<div class="section">
+			<div class="container conter-ming">
+				<div class="col-xs-12 col-sm-12 col-md-12 right-infor">
+					<div class="infor-conter">
+						<div class="crumbs">
+							<a href="list.html">列表</a>
 						</div>
-						<div class="detail-infor">
-							<span>发布时间：2017-07-26</span>
-							<span>来源：威喀尔</span>
-							<span>作者：肉多多</span>
-						</div>
-						<div class="detail-span">
-							<img src="images/img_006.jpg" />
-							<p>
-								北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。
-							</p>
-							<p>
-								北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。
-							</p>
-							<p>
-								北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。北京时间7月26日下午，威喀尔与湖南怀化武陵山智能终端产业园举行签约仪式。按照威喀尔历年的节奏，威喀尔国际产业园将在此落地，并带动当地人员就业，促进地方经济发展。
-							</p>
-						</div>
-						<div class="xiatige">
-							<div class="col-xs-12 col-sm-6">上一篇：<a>武陵山智能终端产业园项目签约仪式</a></div>
-							<div class="col-xs-12 col-sm-6">下一篇：<a>武陵山</a></div>
+						<div class="detail-min">
+							<div class="detail-tit">
+								{{ ci.rhythmic }}
+							</div>
+							<div class="detail-infor">
+								<span>作者：{{ ci.author }}</span>
+							</div>
+							<div class="detail-span">
+								<p>
+									{{ ci.paragraphs }}
+								</p>
+							</div>
+							<div class="xiatige">
+								<div class="col-xs-12 col-sm-6"><a>上一篇</a></div>
+								<div class="col-xs-12 col-sm-6"><a>下一篇</a></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-----------内容结束---------->
-	<!-----------页尾开始---------->
-	<footer>
-		<div class="container">
-			<div class="foot_Keep_record">版权所有 © 2019 <a href="https://github.com/guanguans">guanguans</a></div>
-		</div>
-	</footer>
-
-
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-	<script>
-		$(".con-btn input").click(function () {
-			$(this).addClass("active").siblings().removeClass("active");
-		});
-	</script>
-
+	<div id="footer-container">
+		<footer-container></footer-container>
+	</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.js"></script>
+<script src="js/data.js"></script>
+
+<script>
+	var app = new Vue({
+		// app 实例
+		el: '#app',
+		// 数据对象
+		data: {
+			ciData: [],
+			ci: [],
+		},
+		// el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子
+		mounted: function () {
+			this.getRequestData();
+		},
+		// 在实例创建完成后被立即调用
+		created: function () {},
+		// 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。
+		updated: function () {},
+		// Vue 实例销毁后调用。
+		destroyed: function () {},
+		// 计算属性
+		computed: {
+
+		},
+		// 监听属性
+		watch: {},
+		// 方法
+		methods: {
+			getCis: function () {
+				this.ciData = data;
+			},
+			getRequestData: function () {
+				var url = window.location.search;
+				var theRequest = new Object();
+				if (url.indexOf("?") != -1) {
+					var str = url.substr(1);
+					strs = str.split("&");
+					for (var i = 0; i < strs.length; i++) {
+						theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
+
+					}
+				}
+				this.ci = theRequest;
+			},
+		},
+	})
+	// 定义一个名为 footer-container 组件
+	Vue.component('footer-container', {
+		data: function () {
+			return {
+				guanguans: 'https://github.com/guanguans',
+			}
+		},
+		template: '<footer><div class="container"><div class="foot_Keep_record">版权所有 © 2019 <a v-bind:href="guanguans" target="_blank">guanguans</a></div></div></footer>'
+	})
+	new Vue({
+		el: '#footer-container'
+	})
+</script>
 
 </html>
