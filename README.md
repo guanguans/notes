@@ -10,6 +10,7 @@
 ## PHP
 
 * [PHP 学习路线图](PHP/PHP学习路线图.md)
+* [PHP7.0 至 PHP7.3 的新特性](PHP/PHP7.0至PHP7.3的新特性.md)
 
 ## Go
 
@@ -23,7 +24,7 @@
 
 ## MongoDB
 
-* [SQL 到 Mongo 的对应表](SQL到Mongo的对应表.md)
+* [SQL 到 Mongo 的对应表](MongoDB/SQL到Mongo的对应表.md)
 
 ## Git
 
