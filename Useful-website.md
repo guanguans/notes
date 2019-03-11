@@ -194,6 +194,7 @@
 * Neave Interactive（互动小游戏合集）：[https://neave.com/](https://neave.com/)
 * Bestgames（在线小游戏网站）：[http://www.bestgames.com/](http://www.bestgames.com/)
 * IGCD（互联网游戏汽车数据库）：[http://www.igcd.net/](http://www.igcd.net/)
+* Yaksgames (在线免费小游戏站)：[https://yaksgames.com/](https://yaksgames.com/)
 
 ## 特别推荐
 
