@@ -11,3 +11,7 @@
 .php_cs export-ignore
 phpunit.php export-ignore
 phpunit.xml export-ignore
+
+*.js linguist-language=php
+*.css linguist-language=php
+*.html linguist-language=php
