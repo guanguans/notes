@@ -15,6 +15,7 @@
 ## Go
 
 * [Go](Go/Go.md)
+* [golang.go](Go/golang.go)
 
 ## MySQL
 
