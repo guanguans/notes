@@ -12,6 +12,7 @@
 * [PHP 学习路线图](PHP/PHP学习路线图.md)
 * [PHP7.0 至 PHP7.3 的新特性](PHP/PHP7.0至PHP7.3的新特性.md)
 * [php.php](PHP/php.php)
+* [PHP 常用函数](PHP/PHP常用函数.md)
 
 ## Go
 
