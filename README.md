@@ -13,7 +13,8 @@
 * [PHP7.0 至 PHP7.3 的新特性](PHP/PHP7.0至PHP7.3的新特性.md)
 * [php.php](PHP/php.php)
 * [PHP 常用函数](PHP/PHP常用函数.md)
-* [PHP 常量](PHP/PHP常量.md.md)
+* [PHP 常量](PHP/PHP常量.md)
+* [PHP 工具包](PHP/PHP工具包.md)
 
 ## Go
 
