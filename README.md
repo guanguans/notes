@@ -52,6 +52,8 @@
 ├── Python
 │   ├── Python.md
 │   └── Python3.md
+├── Redis
+│   └── Redis.md
 ├── Ruby
 │   └── Ruby.md
 ├── Rust
@@ -92,6 +94,10 @@
 * [PHP 工具包](PHP/PHP工具包.md)
 * [PHPUnit](PHP/PHPUnit.md)
 * [PHP 的 SPL Exception](PHP/PHP的SPL-Exception.md)
+
+## Redis
+
+* [Redis](Redis/Redis.md)
 
 ## Go
 
