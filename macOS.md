@@ -266,6 +266,19 @@ uuid@3.2.1
 *   [noti](https://github.com/variadico/noti)[27] > `display notification`
 *   [entr](http://www.entrproject.org/)[28] > `watch`
 
+### Mac 上怎么调节 Launchpad(启动台) 的图标大小，基本就是三行终端命令。
+
+``` bash
+# 先调整每列显示多少个
+$ defaults write com.apple.dock springboard-rows -int 6
+
+# 再调整每行显示多少个
+$ defaults write com.apple.dock springboard-columns -int 11
+
+# 重置一下
+$ defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
+```
+
 ### 原文链接
 
 * [https://linux.cn/article-10171-1.html?utm_source=rss&utm_medium=rss](https://linux.cn/article-10171-1.html?utm_source=rss&utm_medium=rss)
