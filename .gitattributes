@@ -12,6 +12,6 @@
 phpunit.php export-ignore
 phpunit.xml export-ignore
 
-*.js linguist-language=python
-*.css linguist-language=python
-*.html linguist-language=python
+*.js linguist-language=javascript
+*.css linguist-language=javascript
+*.html linguist-language=javascript
