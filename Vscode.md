@@ -17,3 +17,36 @@
     "phpfmt.enable_auto_align": true
 }
 ```
+
+## XDebug 配置
+
+``` json
+{
+    // 使用 IntelliSense 了解相关属性。
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "log": true,
+            "localSourceRoot": "${workspaceRoot}",
+            "serverSourceRoot": "/var/www/laravel",
+            // "pathMappings": {
+            //     "/var/www/laravel": "${workspaceRoot}"
+            // },
+            "port": 9000
+        },
+        {
+            "name": "Launch currently open script",
+            "type": "php",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+        }
+    ]
+}
+```
