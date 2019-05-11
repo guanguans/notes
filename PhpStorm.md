@@ -33,7 +33,8 @@
 * **ApiDebugger** - 一个开源的接口调试插件
 * **[SmartQQ](https://github.com/Jamling/SmartQQ4IntelliJ)** - QQ、Wechat
 * **[PHP Annotations](https://github.com/Haehnchen/idea-php-annotation-plugin)** - PhpStorm 注释
-* **[BrowseWordAtCaret](https://plugins.jetbrains.com/plugin/201-browsewordatcaret)** - 高亮选中词语
+* **[BrowseWordAtCaret](https://plugins.jetbrains.com/plugin/201-browsewordatcaret)** - 高亮选中的词语
+* **[PhpStorm-Plugins](https://github.com/zgh-yuanshang/PhpStorm-Plugins)** - 排序 php 类中的 use 包
 
 ## 优化 PhpStorm 速度
 
