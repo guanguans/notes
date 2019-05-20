@@ -37,6 +37,7 @@
 │   └── SQL到Mongo的对应表.md
 ├── MySQL
 │   ├── MySQL数据库开发的三十六条军规.md
+│   ├── MySQL数据库设计规范.md
 │   ├── 语法.md
 │   └── 数据类型.md
 ├── PHP
@@ -109,6 +110,7 @@
 * [MySQL 语法](MySQL/语法.md)
 * [MySQL 数据类型](MySQL/数据类型.md)
 * [MySQL 数据库开发的三十六条军规](MySQL/MySQL数据库开发的三十六条军规.md)
+* [MySQL 数据库设计规范](MySQL/MySQL数据库设计规范.md)
 
 ## MongoDB
 
