@@ -110,7 +110,7 @@
 * [SVN](https://packagecontrol.io/packages/SVN) - 支持 Subversion。
 * [Sublime SFTP](https://wbond.net/sublime_packages/sftp) - 支持 FTP。
 * [Markdown​Editing](https://packagecontrol.io/packages/MarkdownEditing) - 支持 Markdown。
-* [Markdown​Highlighting](https://packagecontrol.io/packages/MarkdownHighlighting) - 对于Sublime Text 3，支持GFM的任何配色方案中的Markdown语法高亮显示。
+* [Markdown​Highlighting](https://packagecontrol.io/packages/MarkdownHighlighting) - 对于 Sublime Text 3，支持 GFM 的任何配色方案中的 Markdown 语法高亮显示。
 * [Markdown​TOC](https://packagecontrol.io/packages/MarkdownTOC) - 生成 Markdown 文档目录（TOC）。
 * [Side​Bar​Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) - 侧边栏增强。
 * [Alignment](https://packagecontrol.io/packages/Alignment) - 对齐多个选项和多行选择。

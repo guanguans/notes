@@ -42,7 +42,7 @@
 
 PHPStorm 依赖 java 运行环境，说白了也就是 java 虚拟机，找到`help > Edit Custom VM Options`，然后在这个文件里可以根据需要增加或减少 PHPstorm 使用的内存
 
-```
+```plain
 -Xms500m
 -Xmx1500m
 
@@ -59,7 +59,7 @@ PHPStorm 依赖 java 运行环境，说白了也就是 java 虚拟机，找到`h
 
 进入`help > Edit Custom Properties`来设置 PHPStorm 的自定义属性.
 
-```
+```plain
 editor.zero.latency.typing=true
 ```
 
