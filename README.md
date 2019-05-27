@@ -1,6 +1,7 @@
 # notes
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fguanguans%2Fnotes.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fguanguans%2Fnotes?ref=badge_shield)
 
+[![Build Status](https://travis-ci.org/guanguans/notes.svg?branch=master)](https://travis-ci.org/guanguans/notes)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fguanguans%2Fnotes.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fguanguans%2Fnotes?ref=badge_shield)
 
 学习笔记
 
