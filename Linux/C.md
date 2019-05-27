@@ -1,8 +1,8 @@
 # C
 
-C语言在今天仍然是高性能计算的主要选择。
+C 语言在今天仍然是高性能计算的主要选择。
 
-C大概是大多数程序员用到的最接近底层的语言了，C语言原生的速度就很高了，但是别忘了C的手动内存管理，它会让你将性能发挥到极致。
+C 大概是大多数程序员用到的最接近底层的语言了，C 语言原生的速度就很高了，但是别忘了 C 的手动内存管理，它会让你将性能发挥到极致。
 
 ```c
 // 单行注释以//开始。（仅适用于C99或更新的版本。）
@@ -600,15 +600,15 @@ typedef void (*my_fnp_type)(char *);
 
 ## 更多阅读
 
-最好找一本 [K&R, aka "The C Programming Language", “C程序设计语言”](https://en.wikipedia.org/wiki/The_C_Programming_Language)。它是关于C最重要的一本书，由C的创作者撰写。不过需要留意的是它比较古老了，因此有些不准确的地方。
+最好找一本 [K&R, aka "The C Programming Language", “C 程序设计语言”](https://en.wikipedia.org/wiki/The_C_Programming_Language)。它是关于 C 最重要的一本书，由 C 的创作者撰写。不过需要留意的是它比较古老了，因此有些不准确的地方。
 
 
 另一个比较好的资源是 [Learn C the hard way](http://c.learncodethehardway.org/book/)
 
 如果你有问题，请阅读[compl.lang.c Frequently Asked Questions](http://c-faq.com/)。
 
-使用合适的空格、缩进，保持一致的代码风格非常重要。可读性强的代码比聪明的代码、高速的代码更重要。可以参考下[Linux内核编码风格](https://www.kernel.org/doc/Documentation/CodingStyle)
+使用合适的空格、缩进，保持一致的代码风格非常重要。可读性强的代码比聪明的代码、高速的代码更重要。可以参考下[Linux 内核编码风格](https://www.kernel.org/doc/Documentation/CodingStyle)
 。
-除了这些，多多Google吧
+除了这些，多多 Google 吧
 
 [1] http://stackoverflow.com/questions/119123/why-isnt-sizeof-for-a-struct-equal-to-the-sum-of-sizeof-of-each-member

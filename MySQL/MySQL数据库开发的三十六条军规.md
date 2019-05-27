@@ -1,4 +1,4 @@
-# MySQL数据库开发的三十六条军规
+# MySQL 数据库开发的三十六条军规
 
 ## 一、核心军规(5)
 
@@ -7,37 +7,37 @@
 * 别让脚趾头想事情，那是脑瓜子的职责
 * 让数据库多做她擅长的事:
     * 尽量不在数据库做运算
-    * 复杂运算秱到程序端CPU
-    * 尽可能简单应用MySQL
+    * 复杂运算秱到程序端 CPU
+    * 尽可能简单应用 MySQL
 * 举例: md5() / Order by Rand()
 
 ### 1.2 控制单表数据量
 
 * 一年内的单表数据量预估
-    * 纯INT不超1000W
-    * 含CHAR不超500W
+    * 纯 INT 不超 1000W
+    * 含 CHAR 不超 500W
 * 合理分表不超载
     * USERID
     * DATE
     * AREA
-    * ......
-* 建议单库不超过300-400个表
+    * ……
+* 建议单库不超过 300-400 个表
 
 ### 1.3 保持表身段苗条
 
 * 表字段数少而精
-    * IO高效
+    * IO 高效
     * 全表遍历
     * 表修复快
     * 提高幵发
-    * alter table快
+    * alter table 快
 * 单表多少字段合适?
-* 单表1G体积 500W行评估
-    * 顺序读1G文件需N秒
-    * 单行不超过200Byte
-    * 单表不超过50个纯INT字段
-    * 单表不超过20个CHAR(10)字段
-* 单表字段数上限控制在20~50个
+* 单表 1G 体积 500W 行评估
+    * 顺序读 1G 文件需 N 秒
+    * 单行不超过 200Byte
+    * 单表不超过 50 个纯 INT 字段
+    * 单表不超过 20 个 CHAR(10)字段
+* 单表字段数上限控制在 20~50 个
 
 ### 1.4 平衡范式不冗余
 
@@ -47,12 +47,12 @@
 * 适当时牺牲范式、加入冗余
 * 但会增加代码复杂度
 
-### 1.5 拒绝3B
+### 1.5 拒绝 3B
 
 * 数据库幵发像城市交通
     * 非线性增长
-* 拒绝3B
-    * 大SQL (BIG SQL)
+* 拒绝 3B
+    * 大 SQL (BIG SQL)
     * 大事务 (BIG Transaction)
     * 大批量 (BIG Batch)
 * 详细解析见后
@@ -63,7 +63,7 @@
 * 控制单表数据量
 * 保持表身段苗条
 * 平衡范式不冗余
-* 拒绝3B
+* 拒绝 3B
 
 ## 二、字段类军规(6)
 
@@ -83,46 +83,46 @@
 
 ### 2.2 将字符转化为数字
 
-* 数字型VS字符串型索引
+* 数字型 VS 字符串型索引
     * 更高效
     * 查询更快
     * 占用空间更小
-* 举例:用无符号INT存储IP，而非CHAR(15)
+* 举例:用无符号 INT 存储 IP，而非 CHAR(15)
     * INT UNSIGNED
     * INET_ATON()
     * INET_NTOA()
 
-### 2.3 优先使用ENUM或SET
+### 2.3 优先使用 ENUM 或 SET
 
-* 优先使用ENUM或SET
+* 优先使用 ENUM 或 SET
     * 字符串
     * 可能值已知且有限
 * 存储
-    * ENUM占用1字节，转为数值运算
-    * SET视节点定，最多占用8字节
+    * ENUM 占用 1 字节，转为数值运算
+    * SET 视节点定，最多占用 8 字节
     * 比较时需要加' 单引号(即使是数值)
 * 举例
     * `sex` enum('F','M') COMMENT '性别'
     * `c1` enum('0','1','2','3') COMMENT '职介审核'
 
-### 2.4 避免使用NULL字段
+### 2.4 避免使用 NULL 字段
 
-* 避免使用NULL字段
+* 避免使用 NULL 字段
     * 很难进行查询优化
-    * NULL列加索引，需要额外空间
-    * 含NULL复合索引无效
+    * NULL 列加索引，需要额外空间
+    * 含 NULL 复合索引无效
 * 举例
     * `a` char(32) DEFAULT NULL
     * `b` int(10) NOT NULL
     * `c` int(10) NOT NULL DEFAULT 0
 
-### 2.5 少用并拆分TEXT/BLOB
+### 2.5 少用并拆分 TEXT/BLOB
 
-* TEXT类型处理性能远低亍VARCHAR
+* TEXT 类型处理性能远低亍 VARCHAR
     * 强制生成硬盘临时表
     * 浪费更多空间
-    * VARCHAR(65535)==>64K (注意UTF-8)
-* 尽量不用TEXT/BLOB数据类型
+    * VARCHAR(65535)==>64K (注意 UTF-8)
+* 尽量不用 TEXT/BLOB 数据类型
 * 若必须使用则拆分到单独的表
 * 举例:
 
@@ -139,9 +139,9 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
 
 * 用好数值字段类型
 * 将字符转化为数字
-* 优先使用枚举ENUM/SET
-* 避免使用NULL字段
-* 少用幵拆分TEXT/BLOB
+* 优先使用枚举 ENUM/SET
+* 避免使用 NULL 字段
+* 少用幵拆分 TEXT/BLOB
 * 不在数据库里存图片
 
 ## 三、索引类军规(5)
@@ -154,8 +154,8 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
     * 索引不是赹多赹好
 * 能不加的索引尽量不加
     * 综合评估数据密度和数据分布
-    * 最好不赸过字段数20%
-* 结合核心SQL优先考虑覆盖索引
+    * 最好不赸过字段数 20%
+* 结合核心 SQL 优先考虑覆盖索引
 * 举例
     * 不要给“性别”列创建索引
 
@@ -163,9 +163,9 @@ id INT NOT NULL AUTO_INCREMENT, data text NOT NULL,
 
 * 区分度
     * 单字母区分度:26
-    * 4字母区分度:26*26*26*26=456,976
-    * 5字母区分度:26*26*26*26*26=11,881,376
-    * 6字母区分度:26*26*26*26*26*26=308,915,776
+    * 4 字母区分度:26*26*26*26=456,976
+    * 5 字母区分度:26*26*26*26*26=11,881,376
+    * 6 字母区分度:26*26*26*26*26*26=308,915,776
 * 字符字段必须建前缀索引:
 
 ``` sql
@@ -186,7 +186,7 @@ BAD: SELECT * from table WHERE to_days(current_date) – to_days(date_col) <= 10
 GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 DAY);
 ```
 
-### 3.4 自增列或全局ID做INNODB主键
+### 3.4 自增列或全局 ID 做 INNODB 主键
 
 * 对主键建立聚簇索引
 * 二级索引存储主键值
@@ -194,12 +194,12 @@ GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 D
 * 按自增顺序揑入值
 * 忌用字符串做主键
 * 聚簇索引分裂
-* 推荐用独立亍业务的AUTO_INCREMENT列或全局ID生成 器做代理主键
-* 若不指定主键，InnoDB会用唯一且非空值索引代替
+* 推荐用独立亍业务的 AUTO_INCREMENT 列或全局 ID 生成 器做代理主键
+* 若不指定主键，InnoDB 会用唯一且非空值索引代替
 
 ### 3.5 尽量不用外键
 
-* 线上OLTP系统(线下系统另论)
+* 线上 OLTP 系统(线下系统另论)
     * 外键可节省开发量
     * 有额外开销
     * 逐行操作
@@ -212,50 +212,50 @@ GOOD: SELECT * from table WHERE date_col >= DATE_SUB('2011-10- 22',INTERVAL 10 D
 * 谨慎合理添加索引
 * 字符字段必须建前缀索引
 * 不在索引列做运算
-* 自增列或全局ID做INNODB主键
+* 自增列或全局 ID 做 INNODB 主键
 * 尽量不用外键
 
-## 四、SQL类军规(15)
+## 四、SQL 类军规(15)
 
-### 4.1 SQL语句尽可能简单
+### 4.1 SQL 语句尽可能简单
 
-* 大SQL VS 多个简单SQL
+* 大 SQL VS 多个简单 SQL
     * 传统设计思想
     * BUT MySQL NOT
-    * 一条SQL叧能在一个CPU运算
-    * 5000+ QPS的高幵发中，1秒大SQL意味着?
-    * 可能一条大SQL就把整个数据库堵死
-* 拒绝大SQL，拆解成多条简单SQL
-    * 简单SQL缓存命中率更高
-    * 减少锁表时间，特别是MyISAM
-    * 用上多CPU
+    * 一条 SQL 叧能在一个 CPU 运算
+    * 5000+ QPS 的高幵发中，1 秒大 SQL 意味着?
+    * 可能一条大 SQL 就把整个数据库堵死
+* 拒绝大 SQL，拆解成多条简单 SQL
+    * 简单 SQL 缓存命中率更高
+    * 减少锁表时间，特别是 MyISAM
+    * 用上多 CPU
 
 ### 4.2 保持事务(连接)短小
 
-* 保持事务/DB连接短小精悍
+* 保持事务/DB 连接短小精悍
     * 事务/连接使用原则:即开即用，用完即关
     * 与事务无关操作放到事务外面, 减少锁资源的占用
     * 不破坏一致性前提下，使用多个短事务代替长事务
 * 举例
     * 发贴时的图片上传等待
-    * 大量的sleep连接
+    * 大量的 sleep 连接
 
-### 4.3 尽可能避免使用SP/TRIG/FUNC
+### 4.3 尽可能避免使用 SP/TRIG/FUNC
 
-* 线上OLTP系统(线下库另论)
+* 线上 OLTP 系统(线下库另论)
     * 尽可能少用存储过程
     * 尽可能少用触发器
-    * 减用使用MySQL凼数对结果进行处理
+    * 减用使用 MySQL 凼数对结果进行处理
 * 由客户端程序负责
 
-### 4.4 尽量不用 SELECT *
+### 4.4 尽量不用 SELECT 
 
-* 用SELECT * 时
-* 更多消耗CPU、内存、IO、网络带宽
+* 用 SELECT * 时
+* 更多消耗 CPU、内存、IO、网络带宽
 * 先向数据库请求所有列，然后丢掉不需要列?
-* 尽量不用SELECT * ，叧取需要数据列 • 更安全的设计:减少表变化带来的影响
-* 为使用covering index提供可能性
-* SELECT/JOIN减少硬盘临时表生成，特别是有TEXT/BLOB时
+* 尽量不用 SELECT * ，叧取需要数据列 • 更安全的设计:减少表变化带来的影响
+* 为使用 covering index 提供可能性
+* SELECT/JOIN 减少硬盘临时表生成，特别是有 TEXT/BLOB 时
 * 举例:
 
 ``` sql
@@ -263,13 +263,13 @@ SELECT * FROM tag WHERE id = 999184;
 SELECT keyword FROM tag WHERE id = 999184;
 ```
 
-### 4.5 改写OR为IN()
+### 4.5 改写 OR 为 IN()
 
-* 同一字段，将or改写为in()
-* OR效率:O(n)
+* 同一字段，将 or 改写为 in()
+* OR 效率:O(n)
 * IN 效率:O(Log n)
-* 当n很大时，OR会慢很多
-* 注意控制IN的个数，建议n小亍200
+* 当 n 很大时，OR 会慢很多
+* 注意控制 IN 的个数，建议 n 小亍 200
 * 举例:
 
 ``` sql
@@ -277,11 +277,11 @@ SELECT * from opp WHERE phone='12347856' or phone='42242233' \G;
 SELECT * from opp WHERE phone in ('12347856' , '42242233');
 ```
 
-### 4.6 改写OR为UNION
+### 4.6 改写 OR 为 UNION
 
-* 不同字段，将or改为union
+* 不同字段，将 or 改为 union
 * 减少对不同字段进行 "or" 查询
-* Merge index往往很弱智
+* Merge index 往往很弱智
 * 如果有足够信心:set global optimizer_switch='index_merge=off';
 * 举例:
 
@@ -293,7 +293,7 @@ SELECT * from opp WHERE phone='010-88886666' union SELECT * from opp WHERE cellP
 ### 4.7 避免负向查询和% 前缀模糊查询
 
 * 避免负向查询
-    * NOT、!=、<>、!<、!>、NOT EXISTS、NOT IN、 NOT LIKE等
+    * NOT、!=、<>、!<、!>、NOT EXISTS、NOT IN、 NOT LIKE 等
 * 避免 % 前缀模糊查询
     * B+ Tree
     * 使用不了索引
@@ -324,21 +324,21 @@ SELECT * from post WHERE title like '%北京%'; -- 572 rows in set (3.27 sec)
     * COUNT(*)!=count(col)
     * WHY?
 
-### 4.9 减少COUNT(*)
+### 4.9 减少 COUNT(*)
 
 * MyISAM VS INNODB
     * 不带 WHERE COUNT()
     * 带 WHERE COUNT()
 * COUNT(*)的资源开销大，尽量不用少用
 * 计数统计
-    * 实时统计:用memcache，双向更新，凌晨 跑基准
+    * 实时统计:用 memcache，双向更新，凌晨 跑基准
     * 非实时统计:尽量用单独统计表，定期重算
 
-### 4.10 LIMIT高效分页
+### 4.10 LIMIT 高效分页
 
 * 传统分页:
     * SELECT * from table limit 10000,10;
-* LIMIT原理:
+* LIMIT 原理:
     * Limit 10000,10  偏秱量赹大则赹慢
 * 推荐分页:
     * SELECT * from table WHERE id>=23423 limit 11;
@@ -348,7 +348,7 @@ SELECT * from post WHERE title like '%北京%'; -- 572 rows in set (3.27 sec)
 * 分页方式三:
     * SELECT * FROM table INNER JOIN (SELECT id FROM table LIMIT 10000,10) USING (id);
 * 分页方式四:
-    * 程序取ID:SELECT id from table limit 10000,10;
+    * 程序取 ID:SELECT id from table limit 10000,10;
     * SELECT * from table WHERE id in (123,456...);
 * 可能需按场景分析幵重组索引
 * 示例:
@@ -362,10 +362,10 @@ MySQL> SELECT sql_no_cache * from post WHERE id>=323423 limit 10; 10 rows in set
 MySQL> SELECT * from post WHERE id >= ( SELECT sql_no_cache id from post limit 80000,1 ) limit 10; 10 rows in set (0.02 sec)
 ```
 
-### 4.11 用UNION ALL 而非 UNION
+### 4.11 用 UNION ALL 而非 UNION
 
-* 若无需对结果进行去重，则用UNION ALL
-    * UNION有去重开销
+* 若无需对结果进行去重，则用 UNION ALL
+    * UNION 有去重开销
 * 举例:
 
 ``` sql
@@ -374,11 +374,11 @@ SELECT * FROM detail20091128 UNION ALL SELECT * FROM detail20110427 UNION ALL SE
 
 ### 4.12 分解联接保证高并发
 
-* 高幵发DB不建议进行两个表以上的JOIN
+* 高幵发 DB 不建议进行两个表以上的 JOIN
 * 适当分解联接保证高幵发
     * 可缓存大量早期数据
-    * 使用了多个MyISAM表
-    * 对大表的小ID IN()
+    * 使用了多个 MyISAM 表
+    * 对大表的小 ID IN()
     * 联接引用同一个表多次
     * 举例:
 
@@ -428,7 +428,7 @@ MySQL>SELECT `id`, `gift_code` FROM pool_gift WHERE `deal_id` = 640 AND remark='
     * 成批装载比单行装载更快，不需要每次刷新缓存
     * 无索引时装载比索引装载更快
     * Insert values ,values，values 减少索引刷新
-    * Load data比insert快约20倍
+    * Load data 比 insert 快约 20 倍
 * 尽量不用 INSERT ... SELECT
     * 延迟
     * 同步出错
@@ -437,7 +437,7 @@ MySQL>SELECT `id`, `gift_code` FROM pool_gift WHERE `deal_id` = 640 AND remark='
 
 * 大批量更新凌晨操作，避开高峰
 * 凌晨不限制
-* 白天上限默认为100条/秒(特殊再议)
+* 白天上限默认为 100 条/秒(特殊再议)
 * 举例:
 
 ``` sql
@@ -456,21 +456,21 @@ update post set tag=1 WHERE id in (4,5,6); sleep 0.01;
 * MySQLsla
 * Show Processlist
 
-### 4.18 SQL类军规小结
+### 4.18 SQL 类军规小结
 
-* SQL语句尽可能简单
+* SQL 语句尽可能简单
 * 保持事务(连接)短小
-* 尽可能避免使用SP/TRIG/FUNC
+* 尽可能避免使用 SP/TRIG/FUNC
 * 尽量不用 SELECT *
-* 改写OR语句
+* 改写 OR 语句
 * 避免负向查询和% 前缀模糊查询
-* 减少COUNT(*)
-* LIMIT的高效分页
-* 用UNION ALL 而非 UNION
+* 减少 COUNT(*)
+* LIMIT 的高效分页
+* 用 UNION ALL 而非 UNION
 * 分解联接保证高幵发
 * GROUP BY 去除排序
 * 同数据类型的列值比较
-* Load data导数据
+* Load data 导数据
 * 打散大批量更新
 * Know Every SQL!
 
@@ -481,16 +481,16 @@ update post set tag=1 WHERE id in (4,5,6); sleep 0.01;
 * 构建数据库的生态环境
 * 开发无线上库操作权限
 * 原则:线上连线上，线下连线下
-    * 实时数据用real库
-    * 模拟环境用sim库
-    * 测试用qa库
-    * 开发用dev库
+    * 实时数据用 real 库
+    * 模拟环境用 sim 库
+    * 测试用 qa 库
+    * 开发用 dev 库
 
-### 5.2 禁止未经DBA确认的子查询
+### 5.2 禁止未经 DBA 确认的子查询
 
-* MySQL子查询
+* MySQL 子查询
     * 大部分情况优化较差
-    * 特别WHERE中使用IN id的子查询  一般可用JOIN改写
+    * 特别 WHERE 中使用 IN id 的子查询  一般可用 JOIN 改写
 * 举例:
 
 ``` sql
@@ -506,14 +506,14 @@ SELECT * from table1 where id id from table2) in (SELECT insert into table1 (SEL
 * 并发扣款等一致性问题
     * 采用事务
     * 相对值修改
-    * Commit前二次较验冲突
+    * Commit 前二次较验冲突
 
-### 5.4 统一字符集为UTF8
+### 5.4 统一字符集为 UTF8
 
 * 字符集:
-    * MySQL 4.1 以前叧有latin1
+    * MySQL 4.1 以前叧有 latin1
     * 为多语言支持增加多字符集
-    * 也带来了N多问题
+    * 也带来了 N 多问题
     * 保持简单
 * 统一字符集:UTF8
 * 校对规则:utf8_general_ci
@@ -523,13 +523,13 @@ SELECT * from table1 where id id from table2) in (SELECT insert into table1 (SEL
 
 * 库表等名称统一用小写
     * Linux VS Windows
-    * MySQL库表大小写敏感
+    * MySQL 库表大小写敏感
     * 字段名的大小写不敏感
 * 索引命名默认为“idx_字段名”
-* 库名用缩写，尽量在2~7个字母
+* 库名用缩写，尽量在 2~7 个字母
     * DataSharing ==> ds
 * 注意避免用保留字命名
-* ......
+* ……
 
 ### 5.6 注意避免用保留字命名
 
@@ -750,9 +750,9 @@ SELECT * from `return`;
 ### 5.7 约定类军规小结
 
 * 隔离线上线下
-* 禁止未经DBA确认的子查询上线
+* 禁止未经 DBA 确认的子查询上线
 * 永远不在程序端显式加锁
-* 统一字符集为UTF8
+* 统一字符集为 UTF8
 * 统一命名规范
 
 ## 六、原文链接

@@ -460,22 +460,22 @@ if (Object.create === undefined){ // 如果存在则不覆盖
 
 [Mozilla 开发者
 网络](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 提供了优秀的介绍
-Javascript如何在浏览器中使用的文档。而且它是wiki，所以你也可以自行编辑来分享你的知识。
+Javascript 如何在浏览器中使用的文档。而且它是 wiki，所以你也可以自行编辑来分享你的知识。
 
-MDN的 [A re-introduction to
+MDN 的 [A re-introduction to
 JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
-覆盖了这里提到的绝大多数话题的细节。该导引的大多数内容被限定在只是Javascript这个语言本身；
-如果你想了解Javascript是如何在网页中被应用的，那么可以查看
+覆盖了这里提到的绝大多数话题的细节。该导引的大多数内容被限定在只是 Javascript 这个语言本身；
+如果你想了解 Javascript 是如何在网页中被应用的，那么可以查看
 [Document Object
 Model](https://developer.mozilla.org/en-US/docs/Using_the_W3C_DOM_Level_1_Core)
 
 [Learn Javascript by Example and with Challenges](http://www.learneroo.com/modules/64/nodes/350) 是本参考的另一个版本，并包含了挑战习题。
 
 [Javascript Garden](http://bonsaiden.github.io/JavaScript-Garden/) 是一个深入
-讲解所有Javascript反直觉部分的导引。
+讲解所有 Javascript 反直觉部分的导引。
 
 [JavaScript: The Definitive Guide](http://www.amazon.com/gp/product/0596805527/) 是一个经典的指导参考书。
 
 除了这篇文章的直接贡献者之外，这篇文章也参考了这个网站上
-Louie Dinh 的 Python 教程，以及 Mozilla开发者网络上的[JS
+Louie Dinh 的 Python 教程，以及 Mozilla 开发者网络上的[JS
 Tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)。

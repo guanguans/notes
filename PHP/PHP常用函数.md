@@ -1,4 +1,4 @@
-# PHP常用函数
+# PHP 常用函数
 
 ## [](#String "String")String
 

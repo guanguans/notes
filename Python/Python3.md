@@ -601,7 +601,7 @@ print(say())  # Can you buy me a beer?
 print(say(say_please=True))  # Can you buy me a beer? Please! I am poor :(
 ```
 
-## 想继续学吗？
+## 想继续学吗
 
 ### 线上免费材料（英文）
 

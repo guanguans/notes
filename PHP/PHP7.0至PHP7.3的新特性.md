@@ -2,7 +2,7 @@
 
 ## PHP7.0
 
-### PHP7.0新特性
+### PHP7.0 新特性
 
 #### 1. 组合比较符（<=>）
 
@@ -14,9 +14,9 @@ var_dump(123 <=> 456); // int(-1)
 var_dump(['a', 'b'] <=> ['a', 'b']); // int(0)
 ```
 
-#### 2. null合并运算符
+#### 2. null 合并运算符
 
-由于日常使用中存在大量同时使用三元表达式和isset操作。使用空合并运算符可以简化操作
+由于日常使用中存在大量同时使用三元表达式和 isset 操作。使用空合并运算符可以简化操作
 
 ``` php
 // php7以前
@@ -64,7 +64,7 @@ fun(3); // Fatal error
 
 #### 6. 匿名类
 
-php7允许新类{}创建一个匿名的对象。
+php7 允许新类{}创建一个匿名的对象。
 
 ``` php
 // php7以前
@@ -85,9 +85,9 @@ $util->setLogger(new class {
 });
 ```
 
-#### 7. Unicode codepoint转译语法
+#### 7. Unicode codepoint 转译语法
 
-这接受一个以16进制形式的Unicode codepoint，并打印出一个双引号或heredoc包围的UTF-8编码格式的字符串。可以接受任何有效的codepoint，并且开头的0是可以省略的
+这接受一个以 16 进制形式的 Unicode codepoint，并打印出一个双引号或 heredoc 包围的 UTF-8 编码格式的字符串。可以接受任何有效的 codepoint，并且开头的 0 是可以省略的
 
 ``` php
 echo "\u{aa}"; // ª
@@ -129,9 +129,9 @@ $data = unserialize($foo, ["allowed_classes" => ["MyClass", "MyClass2"]);
 $data = unserialize($foo, ["allowed_classes" => true]);
 ```
 
-#### 10. IntlChar类
+#### 10. IntlChar 类
 
-这个类自身定义了许多静态方法用于操作多字符集的unicode字符。需要安装intl拓展
+这个类自身定义了许多静态方法用于操作多字符集的 unicode 字符。需要安装 intl 拓展
 
 ``` php
 printf('%x', IntlChar::CODEPOINT_MAX);
@@ -183,7 +183,7 @@ echo $gen->getReturn(), PHP_EOL;
 
 #### 14. 生成器委派
 
-现在，只需在最外层生成其中使用yield from，就可以把一个生成器自动委派给其他的生成器
+现在，只需在最外层生成其中使用 yield from，就可以把一个生成器自动委派给其他的生成器
 
 ``` php
 function gen()
@@ -203,7 +203,7 @@ foreach (gen() as $val)
 }
 ```
 
-#### 15. 整数除法函数intdiv
+#### 15. 整数除法函数 intdiv
 
 ``` php
 var_dump(intdiv(10, 3)) // 3
@@ -211,7 +211,7 @@ var_dump(intdiv(10, 3)) // 3
 
 #### 16. 会话选项设置
 
-session_start() 可以加入一个数组覆盖php.ini的配置
+session_start() 可以加入一个数组覆盖 php.ini 的配置
 
 ``` php
 session_start([
@@ -291,15 +291,15 @@ int random_int(int min, int max);
 define('ALLOWED_IMAGE_EXTENSIONS', ['jpg', 'jpeg', 'gif', 'png']);
 ```
 
-### PHP7.0变化
+### PHP7.0 变化
 
 #### 1. 错误和异常处理相关变更
 
-PHP 7改变了大多数错误的报告方式。不同于传统（PHP 5）的错误报告机制，现在大多数错误被作为  **错误**  异常抛出。
+PHP 7 改变了大多数错误的报告方式。不同于传统（PHP 5）的错误报告机制，现在大多数错误被作为  **错误**  异常抛出。
 
-这也意味着，当前生错误的时候，以前代码中的一些错误处理的代码将无法被触发。因为在PHP 7版本中，已经使用抛出异常的错误处理机制了。（如果代码中没有捕获  **错误**  异常，那么会引发致命错误）.set_error_handle不一定接收的是异常，有可能是错误。
+这也意味着，当前生错误的时候，以前代码中的一些错误处理的代码将无法被触发。因为在 PHP 7 版本中，已经使用抛出异常的错误处理机制了。（如果代码中没有捕获  **错误**  异常，那么会引发致命错误）.set_error_handle 不一定接收的是异常，有可能是错误。
 
-ERROR层级结构
+ERROR 层级结构
 
 ``` php
 interface Throwable
@@ -324,7 +324,7 @@ function handler(Throwable $e) { ... }
 
 #### 2. 清单
 
-list会按照原来的顺序进行赋值。不再是逆序了
+list 会按照原来的顺序进行赋值。不再是逆序了
 
 ``` php
 list($a,$b,$c) = [1, 2, 3];
@@ -335,7 +335,7 @@ var_dump($c); // 3
 
 列出不再支持解开字符串，
 
-#### 3. foreach不再改变内部数组指针
+#### 3. foreach 不再改变内部数组指针
 
 ``` php
 $array = [0, 1, 2];
@@ -362,11 +362,11 @@ true
 false
 ```
 
-#### 5. $HTTP_RAW_POST_DATA被移
+#### 5. $HTTP_RAW_POST_DATA 被移
 
 `$HTTP_RAW_POST_DATA` 被移，使用 `php://input` 代替
 
-#### 6. 移除了ASP和脚本PHP标签
+#### 6. 移除了 ASP 和脚本 PHP 标签
 
 | 开标签 | 闭标签 |
 | --- | --- |
@@ -376,7 +376,7 @@ false
 
 ## PHP7.1
 
-### PHP7.1新特性
+### PHP7.1 新特性
 
 #### 1. 可为空（Nullable）类型
 
@@ -405,7 +405,7 @@ fun1('1'); // 1
 
 #### 无类型
 
-返回值声明为void类型的方法要么干脆省去return语句。对于void来说，**NULL**  不是一个合法的返回值。
+返回值声明为 void 类型的方法要么干脆省去 return 语句。对于 void 来说，**NULL**  不是一个合法的返回值。
 
 ``` php
 function fun() :void
@@ -426,9 +426,9 @@ class Something
 }
 ```
 
-#### 4. iterable伪类
+#### 4. iterable 伪类
 
-这可以被用在参数或者返回值类型中，它代表接受数组或者实现了**Traversable的**接口的对象。
+这可以被用在参数或者返回值类型中，它代表接受数组或者实现了**Traversable 的**接口的对象。
 
 ``` php
 function iterator(iterable $iter)
@@ -441,7 +441,7 @@ function iterator(iterable $iter)
 
 #### 5. 多异常捕获处理
 
-一个catch语句块现在可以通过管道字符（_|_ ）来实现多个异常的捕获。这对于需要同时处理来自不同类的不同异常时很有用
+一个 catch 语句块现在可以通过管道字符（_|_ ）来实现多个异常的捕获。这对于需要同时处理来自不同类的不同异常时很有用
 
 ``` php
 try {
@@ -472,7 +472,7 @@ $a[-2]; // l
 
 #### 8. 将回调转闭包
 
-Closure新增了一个静态方法，用于将callable快速地转为一个Closure对象。
+Closure 新增了一个静态方法，用于将 callable 快速地转为一个 Closure 对象。
 
 ``` php
 class Test
@@ -490,21 +490,21 @@ $privFunc = (new Test)->exposeFunction();
 $privFunc('some value');
 ```
 
-#### 9. http2服务推送
+#### 9. http2 服务推送
 
-对http2服务器推送的支持现在已经被加入到CURL扩展
+对 http2 服务器推送的支持现在已经被加入到 CURL 扩展
 
-### PHP7.1变更
+### PHP7.1 变更
 
 #### 1. 传递参数过少时将抛出错误
 
-过去我们传递参数过少会产生warning.php7.1开始会抛出错误
+过去我们传递参数过少会产生 warning.php7.1 开始会抛出错误
 
-#### 2. 移除了ext / mcrypt拓展
+#### 2. 移除了 ext / mcrypt 拓展
 
 ## PHP7.2
 
-### PHP7.2新特性
+### PHP7.2 新特性
 
 #### 增加新的类型对象
 
@@ -518,7 +518,7 @@ test(new StdClass());
 
 #### 2. 通过名称加载扩展
 
-扩展文件不再需要通过文件加载（Unix下以_.so_为文件扩展名，在Windows下以  _.dll_  为文件扩展名）进行指定。可以在php.ini配置文件进行启用
+扩展文件不再需要通过文件加载（Unix 下以_.so_为文件扩展名，在 Windows 下以  _.dll_  为文件扩展名）进行指定。可以在 php.ini 配置文件进行启用
 
 ``` ini
 ; ini file
@@ -542,13 +542,13 @@ abstract class B extends A
 }
 ```
 
-#### 4. 使用Argon2算法生成密码散列
+#### 4. 使用 Argon2 算法生成密码散列
 
-Argon2已被加入到密码散列（密码哈希）API（这些函数以  _密码_  _开头），以下是暴露出来的常量
+Argon2 已被加入到密码散列（密码哈希）API（这些函数以  _密码_  _开头），以下是暴露出来的常量
 
-#### 5. 新增PDO字符串扩展类型
+#### 5. 新增 PDO 字符串扩展类型
 
-当你准备支持多语言字符集，PDO的字符串类型已经扩展支持国际化的字符集以下是扩展的常量：
+当你准备支持多语言字符集，PDO 的字符串类型已经扩展支持国际化的字符集以下是扩展的常量：
 
 * PDO :: PARAM_STR_NATL
 * PDO :: PARAM_STR_CHAR
@@ -568,15 +568,15 @@ use Foo\Bar\{
 };
 ```
 
-### PHP7.2变更
+### PHP7.2 变更
 
-#### 1. number_format返回值
+#### 1. number_format 返回值
 
 ``` php
 var_dump(number_format(-0.01)); // now outputs string(1) "0" instead of string(2) "-0"
 ```
 
-#### 2. get_class（）不再允许null。
+#### 2. get_class（）不再允许 null
 
 ``` php
 var_dump(get_class(null)); // warning
@@ -596,19 +596,19 @@ count(1); // integers are not countable
 var_dump(HEELLO);
 ```
 
-#### 6. __autoload被废弃
+#### 6. __autoload 被废弃
 
-__autoload方法已被废弃
+__autoload 方法已被废弃
 
 #### 7. 每个都被废弃
 
 使用此函数遍历时，比普通的的 _foreach_  更慢，并且给新语法的变化带来实现问题。因此它被废弃了。
 
-#### 8. is_object，gettype修正
+#### 8. is_object，gettype 修正
 
-is_object作用在 **__ PHP_Incomplete_Class**
+is_object 作用在 **__ PHP_Incomplete_Class**
 
-将gettype作用在闭包在将正确返回的资源
+将 gettype 作用在闭包在将正确返回的资源
 
 #### 9. 转换对象/数组转换中的数字键
 
@@ -629,7 +629,7 @@ var_dump(
 
 * 添加了 array_key_first() 和 array_key_last() 来获取数组的第一个和最后一个元素的键名
 * 添加了 fpm_get_status() 方法，来获取 FPM 状态数组，
-* 添加了几个FPM的配置项，用来控制日志单行最大字符数，日志缓冲等：log_limit，log_buffering，decorate_workers_output
+* 添加了几个 FPM 的配置项，用来控制日志单行最大字符数，日志缓冲等：log_limit，log_buffering，decorate_workers_output
 * 现在需要 libcurl >= 7.15.5
 * curl 添加了一堆常量
 * json_decode 添加了一个常量，JSON_THROW_ON_ERROR，如果解析失败可以抛出异常，而不是通过之前的方法 json_last_error() 去获取

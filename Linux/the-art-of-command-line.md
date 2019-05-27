@@ -153,14 +153,14 @@
 
 - 在 Bash 中，同时重定向标准输出和标准错误：`some-command >logfile 2>&1` 或者 `some-command &>logfile`。通常，为了保证命令不会在标准输入里残留一个未关闭的文件句柄捆绑在你当前所在的终端上，在命令后添加 `</dev/null` 是一个好习惯。
 
-- 使用 `man ascii` 查看具有十六进制和十进制值的ASCII表。`man unicode`，`man utf-8`，以及 `man latin1` 有助于你去了解通用的编码信息。
+- 使用 `man ascii` 查看具有十六进制和十进制值的 ASCII 表。`man unicode`，`man utf-8`，以及 `man latin1` 有助于你去了解通用的编码信息。
 
 - 使用 `screen` 或 [`tmux`](https://tmux.github.io/) 来使用多份屏幕，当你在使用 ssh 时（保存 session 信息）将尤为有用。而 `byobu` 可以为它们提供更多的信息和易用的管理工具。另一个轻量级的 session 持久化解决方案是 [`dtach`](https://github.com/bogner/dtach)。
 
 - ssh 中，了解如何使用 `-L` 或 `-D`（偶尔需要用 `-R`）开启隧道是非常有用的，比如当你需要从一台远程服务器上访问 web 页面。
 
 - 对 ssh 设置做一些小优化可能是很有用的，例如这个 `~/.ssh/config` 文件包含了防止特定网络环境下连接断开、压缩数据、多通道等选项：
-```
+```plain
       TCPKeepAlive=yes
       ServerAliveInterval=15
       ServerAliveCountMax=6
@@ -193,7 +193,7 @@
 - 了解命令行的 [128K 限制](https://wiki.debian.org/CommonErrorMessages/ArgumentListTooLong)。使用通配符匹配大量文件名时，常会遇到“Argument list too long”的错误信息。（这种情况下换用 `find` 或 `xargs` 通常可以解决。）
 
 - 当你需要一个基本的计算器时，可以使用 `python` 解释器（当然你要用 python 的时候也是这样）。例如：
-```
+```plain
 >>> 2+3
 5
 ```
@@ -255,7 +255,7 @@
 mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 ```
 
-- 若要在复制文件时获取当前进度，可使用 `pv`，[`pycp`](https://github.com/dmerejkowsky/pycp)，[`progress`](https://github.com/Xfennec/progress)，`rsync --progress`。若所执行的复制为block块拷贝，可以使用 `dd status=progress`。
+- 若要在复制文件时获取当前进度，可使用 `pv`，[`pycp`](https://github.com/dmerejkowsky/pycp)，[`progress`](https://github.com/Xfennec/progress)，`rsync --progress`。若所执行的复制为 block 块拷贝，可以使用 `dd status=progress`。
 
 - 使用 `shuf` 可以以行为单位来打乱文件的内容或从一个文件中随机选取多行。
 
@@ -521,7 +521,7 @@ mkdir empty && rsync -r --delete empty/ some-dir && rmdir some-dir
 
 - `lsblk`：列出块设备信息：以树形展示你的磁盘以及磁盘分区信息
 
-- `lshw`，`lscpu`，`lspci`，`lsusb` 和 `dmidecode`：查看硬件信息，包括 CPU、BIOS、RAID、显卡、USB设备等
+- `lshw`，`lscpu`，`lspci`，`lsusb` 和 `dmidecode`：查看硬件信息，包括 CPU、BIOS、RAID、显卡、USB 设备等
 
 - `lsmod` 和 `modinfo`：列出内核模块，并显示其细节
 

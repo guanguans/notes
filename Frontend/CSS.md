@@ -1,12 +1,12 @@
 # CSS
 
-早期的web没有样式，只是单纯的文本。通过CSS，可以实现网页样式和内容的分离。
+早期的 web 没有样式，只是单纯的文本。通过 CSS，可以实现网页样式和内容的分离。
 
-简单来说，CSS可以指定HTML页面上的元素所使用的样式。
+简单来说，CSS 可以指定 HTML 页面上的元素所使用的样式。
 
-和其他语言一样，CSS有很多版本。最新的版本是CSS 3. CSS 2.0兼容性最好。
+和其他语言一样，CSS 有很多版本。最新的版本是 CSS 3. CSS 2.0 兼容性最好。
 
-你可以使用[dabblet](http://dabblet.com/)来在线测试CSS的效果。
+你可以使用[dabblet](http://dabblet.com/)来在线测试 CSS 的效果。
 
 ``` css
 /* 注释 */
@@ -130,7 +130,7 @@ div.some-parent.class-name {}
 
 ## 使用
 
-CSS文件使用 `.css` 后缀。
+CSS 文件使用 `.css` 后缀。
 
 ```xml
 <!-- 你需要在文件的 <head> 引用CSS文件 -->
@@ -152,7 +152,7 @@ CSS文件使用 `.css` 后缀。
 
 同一个元素可能被多个不同的选择器指定，因此可能会有冲突。
 
-假定CSS是这样的：
+假定 CSS 是这样的：
 
 ```css
 /*A*/
@@ -198,6 +198,6 @@ CSS2 的绝大部分特性兼容各种浏览器和设备。现在 CSS3 的兼容
 
 ## 扩展阅读
 
-* [理解CSS的风格优先级: 特定性, 继承和层叠](http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/)
+* [理解 CSS 的风格优先级: 特定性, 继承和层叠](http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/)
 * [QuirksMode CSS](http://www.quirksmode.org/css/)
 * [Z-Index - The stacking context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Understanding_z_index/The_stacking_context)

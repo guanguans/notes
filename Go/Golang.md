@@ -1,10 +1,10 @@
 # Golang
 
-发明Go语言是出于更好地完成工作的需要。Go不是计算机科学的最新发展潮流，但它却提供了解决现实问题的最新最快的方法。
+发明 Go 语言是出于更好地完成工作的需要。Go 不是计算机科学的最新发展潮流，但它却提供了解决现实问题的最新最快的方法。
 
-Go拥有命令式语言的静态类型，编译很快，执行也很快，同时加入了对于目前多核CPU的并发计算支持，也有相应的特性来实现大规模编程。
+Go 拥有命令式语言的静态类型，编译很快，执行也很快，同时加入了对于目前多核 CPU 的并发计算支持，也有相应的特性来实现大规模编程。
 
-Go语言有非常棒的标准库，还有一个充满热情的社区。
+Go 语言有非常棒的标准库，还有一个充满热情的社区。
 
 ```go
 // 单行注释
@@ -382,18 +382,18 @@ func requestServer() {
 
 ## 更进一步
 
-关于Go的一切你都可以在[Go官方网站](http://golang.org/)找到。
+关于 Go 的一切你都可以在[Go 官方网站](http://golang.org/)找到。
 在那里你可以获得教程参考，在线试用，和更多的资料。
-在简单的尝试过后，在[官方文档](https://golang.org/doc/)那里你会得到你所需要的所有资料、关于编写代码的规范、库和命令行工具的文档与Go的版本历史。
+在简单的尝试过后，在[官方文档](https://golang.org/doc/)那里你会得到你所需要的所有资料、关于编写代码的规范、库和命令行工具的文档与 Go 的版本历史。
 
 强烈推荐阅读语言定义部分，很简单而且很简洁！（赶时髦！）
 
-你还可以前往[Go在线体验中心](https://play.golang.org/p/tnWMjr16Mm)进，在浏览器里修改并运行这些代码，一定要试一试哦！你可以将[https://play.golang.org](https://play.golang.org)当作一个[REPL](https://en.wikipedia.org/wiki/Read-eval-print_loop)，在那里体验语言特性或运行自己的代码，连环境都不用配！
+你还可以前往[Go 在线体验中心](https://play.golang.org/p/tnWMjr16Mm)进，在浏览器里修改并运行这些代码，一定要试一试哦！你可以将[https://play.golang.org](https://play.golang.org)当作一个[REPL](https://en.wikipedia.org/wiki/Read-eval-print_loop)，在那里体验语言特性或运行自己的代码，连环境都不用配！
 
-学习Go还要阅读Go[标准库的源代码](http://golang.org/src/)，全部文档化了，可读性非常好，可以学到go，go style和go idioms。在[文档](http://golang.org/pkg/)中点击函数名，源代码就出来了！
+学习 Go 还要阅读 Go[标准库的源代码](http://golang.org/src/)，全部文档化了，可读性非常好，可以学到 go，go style 和 go idioms。在[文档](http://golang.org/pkg/)中点击函数名，源代码就出来了！
 
 [Go by example](https://gobyexample.com/)也是一个学习的好地方。
 
 
 
-Go Mobile添加了对移动平台的支持（Android and iOS）。你可以完全用go语言来创造一个app或编写一个可以从Java或Obj-C调用的函数库，敬请参考[Go Mobile page](https://github.com/golang/go/wiki/Mobile)。
+Go Mobile 添加了对移动平台的支持（Android and iOS）。你可以完全用 go 语言来创造一个 app 或编写一个可以从 Java 或 Obj-C 调用的函数库，敬请参考[Go Mobile page](https://github.com/golang/go/wiki/Mobile)。

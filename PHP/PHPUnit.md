@@ -252,9 +252,9 @@ OK (33 tests, 52 assertions)
 
 通过注释来限制某些测试不能超过一定时间：
 
-* @large 60秒
-* @medium 10秒
-* [@small](https://learnku.com/users/24849) 1秒
+* @large 60 秒
+* @medium 10 秒
+* [@small](https://learnku.com/users/24849) 1 秒
 
 > 通过设置 `--enforce-time-limit` 命令行参数，或者在 xml 配置文件中配置 `enforceTimeLimit="true"` 来更改这一默认行为。
 

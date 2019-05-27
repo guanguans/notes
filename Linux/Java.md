@@ -1,6 +1,6 @@
 # Java
 
-Java是一个通用的程序语言, 包含并发, 基于类的面向对象等特性
+Java 是一个通用的程序语言, 包含并发, 基于类的面向对象等特性
 [阅读更多](http://docs.oracle.com/javase/tutorial/java/index.html)
 
 ```java
@@ -376,7 +376,7 @@ class PennyFarthing extends Bicycle {
 
 ## 更多阅读
 
-下面的链接只是为了便于大家理解这些主题而给出的，对于具体的例子请大家自行Google
+下面的链接只是为了便于大家理解这些主题而给出的，对于具体的例子请大家自行 Google
 
 其他主题：
 
@@ -395,4 +395,4 @@ class PennyFarthing extends Bicycle {
 
 * [泛型](http://docs.oracle.com/javase/tutorial/java/generics/index.html)
 
-* [Java代码规范](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)
+* [Java 代码规范](http://www.oracle.com/technetwork/java/codeconvtoc-136057.html)

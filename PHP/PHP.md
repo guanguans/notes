@@ -624,4 +624,4 @@ $cls = new SomeOtherNamespace\MyClass();
 
 如果你很熟悉善于包管理的语言 [Composer](http://getcomposer.org/).
 
-如要了解通用标准，请访问PHP Framework Interoperability Group's [PSR standards](https://github.com/php-fig/fig-standards).
+如要了解通用标准，请访问 PHP Framework Interoperability Group's [PSR standards](https://github.com/php-fig/fig-standards).

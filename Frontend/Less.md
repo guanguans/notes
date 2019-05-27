@@ -1,6 +1,6 @@
 # Less
 
-Less是一种CSS预处理器，它增加了诸如变量、嵌套、mixin等功能。
+Less 是一种 CSS 预处理器，它增加了诸如变量、嵌套、mixin 等功能。
 Less(以及其它预处理器，如[Sass](http://sass-lang.com/))能帮助开发人员编写易维护，DRY (Don't Repeat Yourself) 的代码。
 
 ```css
@@ -361,15 +361,15 @@ body {
 
 ```
 
-## 实践Less
+## 实践 Less
 
-如果你想在你的浏览器中尝试LESS，参阅：
+如果你想在你的浏览器中尝试 LESS，参阅：
 * [Codepen](http://codepen.io/)
 * [LESS2CSS](http://lesscss.org/less-preview/)
 
 ## 兼容性
 
-Less可以用于任何项目中，只要你有程序能将它编译成CSS即可。你还需要验证你所使用的CSS是否与你的目标浏览器兼容。
+Less 可以用于任何项目中，只要你有程序能将它编译成 CSS 即可。你还需要验证你所使用的 CSS 是否与你的目标浏览器兼容。
 
 [QuirksMode CSS](http://www.quirksmode.org/css/)和[CanIUse](http://caniuse.com) 对于检查兼容性来说都是不错的资源。
 

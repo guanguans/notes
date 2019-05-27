@@ -1,13 +1,13 @@
 # Sass
 
-Sass是一种CSS扩展语言，它增加了诸如变量、嵌套、mixin等功能。
+Sass 是一种 CSS 扩展语言，它增加了诸如变量、嵌套、mixin 等功能。
 Sass(以及其它预处理器，如[Less](http://lesscss.org/)等) 能帮助开发人员编写易维护和 DRY (Don't Repeat Yourself)的代码。
 
-Sass有两种不同的语法可选用。SCSS的语法和CSS的相同，但增加了Sass的额外功能。或者Sass（原来的语法），它使用缩进而非大括号和分号。
+Sass 有两种不同的语法可选用。SCSS 的语法和 CSS 的相同，但增加了 Sass 的额外功能。或者 Sass（原来的语法），它使用缩进而非大括号和分号。
 
-本教程使用SCSS编写。
+本教程使用 SCSS 编写。
 
-如果你已熟悉CSS3，你可能相对能较快地掌握Sass。它并没有提供任何新的类型属性，而只是提供了一些工具使你能更高效的编写CSS，并且使维护更加容易。
+如果你已熟悉 CSS3，你可能相对能较快地掌握 Sass。它并没有提供任何新的类型属性，而只是提供了一些工具使你能更高效的编写 CSS，并且使维护更加容易。
 
 ```scss
 
@@ -551,20 +551,20 @@ body {
 
 ```
 
-## SASS还是Sass?
+## SASS 还是 Sass
 该语言的名字，“Sass”，是一个词，不是一个缩写。
-你有没想过Sass是否是一个缩写词？你可能没有，但我反正会告诉你。
+你有没想过 Sass 是否是一个缩写词？你可能没有，但我反正会告诉你。
 该语言的名字是一个单词，不是一个缩写词。
 由于人们老是将它写成"SASS"，语言的作者开玩笑地称它为"Syntactically Awesome StyleSheets"。
 
 
-## 实践Sass
-如果你想在你的浏览器中尝试Sass，参阅[SassMeister](http://sassmeister.com/)。
-你可以选用任一种语法，只需进到设置页然后选择Sass或SCSS。
+## 实践 Sass
+如果你想在你的浏览器中尝试 Sass，参阅[SassMeister](http://sassmeister.com/)。
+你可以选用任一种语法，只需进到设置页然后选择 Sass 或 SCSS。
 
 
 ## 兼容性
-Sass可以用于任何项目中，只要你有程序能将它编译成CSS即可。你还需要验证你所使用的CSS是否与你的目标浏览器兼容。
+Sass 可以用于任何项目中，只要你有程序能将它编译成 CSS 即可。你还需要验证你所使用的 CSS 是否与你的目标浏览器兼容。
 
 [QuirksMode CSS](http://www.quirksmode.org/css/)和[CanIUse](http://caniuse.com)对于检查兼容性来说都是不错的资源。
 

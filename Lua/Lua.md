@@ -389,11 +389,11 @@ g()  -- 打印343; 在此之前什么也不打印。
 
 
 
-为什么？我非常兴奋地学习lua， 这样我就可以使用[Löve 2D游戏引擎](http://love2d.org/)来编游戏。
+为什么？我非常兴奋地学习 lua， 这样我就可以使用[Löve 2D 游戏引擎](http://love2d.org/)来编游戏。
 
-怎么做？我从[BlackBulletIV的面向程序员的Lua指南](http://nova-fusion.com/2012/08/27/lua-for-programmers-part-1/)入门。接着我阅读了官方的[Lua编程](http://www.lua.org/pil/contents.html)一书。
+怎么做？我从[BlackBulletIV 的面向程序员的 Lua 指南](http://nova-fusion.com/2012/08/27/lua-for-programmers-part-1/)入门。接着我阅读了官方的[Lua 编程](http://www.lua.org/pil/contents.html)一书。
 
-lua-users.org上的[Lua简明参考](http://lua-users.org/files/wiki_insecure/users/thomasl/luarefv51.pdf)应该值得一看。
+lua-users.org 上的[Lua 简明参考](http://lua-users.org/files/wiki_insecure/users/thomasl/luarefv51.pdf)应该值得一看。
 
 本文没有涉及标准库的内容：
 
@@ -403,9 +403,9 @@ lua-users.org上的[Lua简明参考](http://lua-users.org/files/wiki_insecure/us
 * <a href="http://lua-users.org/wiki/IoLibraryTutorial">io library</a>
 * <a href="http://lua-users.org/wiki/OsLibraryTutorial">os library</a>
 
-顺便说一下，整个文件是可运行的Lua;
+顺便说一下，整个文件是可运行的 Lua;
 保存为 learn-cn.lua 用命令 `lua learn-cn.lua` 启动吧！
 
 本文首次撰写于 [tylerneylon.com](http://tylerneylon.com) 同时也有 [github gist](https://gist.github.com/tylerneylon/5853042) 版.
 
-使用Lua，欢乐常在！
+使用 Lua，欢乐常在！
