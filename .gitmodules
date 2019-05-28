@@ -1,0 +1,6 @@
+[submodule "design-patterns-for-humans-cn"]
+	path = design-patterns-for-humans-cn
+	url = https://github.com/guanguans/design-patterns-for-humans-cn.git
+[submodule "awesome-mongodb-cn"]
+	path = awesome-mongodb-cn
+	url = https://github.com/guanguans/awesome-mongodb-cn.git
