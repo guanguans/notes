@@ -35,6 +35,8 @@
 * **[PHP Annotations](https://github.com/Haehnchen/idea-php-annotation-plugin)** - PhpStorm 注释
 * **[BrowseWordAtCaret](https://plugins.jetbrains.com/plugin/201-browsewordatcaret)** - 高亮选中的词语
 * **[PhpStorm-Plugins](https://github.com/zgh-yuanshang/PhpStorm-Plugins)** - 排序 php 类中的 use 包
+* **[leetcode-editor](https://github.com/shuzijun/leetcode-editor)** - leetcode
+* **[SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint)** - 综合检查代码质量，可持续集成
 
 ## 优化 PhpStorm 速度
 
