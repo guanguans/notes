@@ -27,7 +27,7 @@ $ atool -x v1.6.3.3.tar.gz
 # 或者使用这个命令解压
 $ tar zxvf v1.6.3.3.tar.gz
 # 进入源码包文件夹
-$ cd manpages-zh-1.6.3.2/
+$ cd manpages-zh-1.6.3.3/
 # 编译安装 1
 $ autoreconf --install --force
 # 编译安装 2
