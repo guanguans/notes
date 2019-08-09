@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "gaoyongfu",
+      "name": "渊虹",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/32188852?v=4",
+      "profile": "https://github.com/gaoyongfu",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "notes",
+  "projectOwner": "guanguans",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
