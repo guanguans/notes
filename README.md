@@ -1,7 +1,7 @@
 # notes
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Build Status](https://travis-ci.org/guanguans/notes.svg?branch=master)](https://travis-ci.org/guanguans/notes)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 学习笔记
 
@@ -64,10 +64,6 @@
 * [Shell](Shell.md)
 * [Vscode](Vscode.md)
 
-## License
-
-[Apache License 2.0](./LICENSE)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -83,3 +79,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+[Apache License 2.0](./LICENSE)
