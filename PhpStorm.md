@@ -37,6 +37,7 @@
 * **[PhpStorm-Plugins](https://github.com/zgh-yuanshang/PhpStorm-Plugins)** - 排序 php 类中的 use 包
 * **[leetcode-editor](https://github.com/shuzijun/leetcode-editor)** - leetcode
 * **[SonarLint](https://plugins.jetbrains.com/plugin/7973-sonarlint)** - 综合检查代码质量，可持续集成
+* **[Embedded Web Browser](https://plugins.jetbrains.com/plugin/12282-embedded-web-browser)** - 编辑器内使用 web 浏览器
 
 ## 优化 PhpStorm 速度
 
