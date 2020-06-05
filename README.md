@@ -35,6 +35,7 @@
 * [MySQL 数据类型](MySQL/数据类型.md)
 * [MySQL 数据库开发的三十六条军规](MySQL/MySQL数据库开发的三十六条军规.md)
 * [MySQL 数据库设计规范](MySQL/MySQL数据库设计规范.md)
+* [MySQL 常用函数汇总](MySQL/MySQL常用函数汇总.md)
 
 ## MongoDB
 
