@@ -14,4 +14,4 @@ jobs:
         with:
           configFile: .lintmdrc
           failOnWarnings: false
-          files: ./ ./.github/ ./*/
+          files: ./ ./*/

@@ -9,7 +9,7 @@
         "no-long-code": [
             2,
             {
-                "length": 256,
+                "length": 512,
                 "exclude": [
                     "dot"
                 ]
