@@ -18,3 +18,4 @@ jpush.log
 /.idea
 /.vagrant
 .env
+.history

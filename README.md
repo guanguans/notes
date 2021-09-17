@@ -1,6 +1,5 @@
 # notes
 
-[![Build Status](https://travis-ci.org/guanguans/notes.svg?branch=master)](https://travis-ci.org/guanguans/notes)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 学习笔记

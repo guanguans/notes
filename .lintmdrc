@@ -1,10 +1,19 @@
 {
-    "excludeFiles": [],
+    "excludeFiles": [
+        "src/",
+        "tests/",
+        "vendor/"
+    ],
     "rules": {
         "no-empty-code": 1,
-        "no-long-code": [1, {
-            "length": 100,
-            "exclude": ["dot"]
-        }]
+        "no-long-code": [
+            2,
+            {
+                "length": 256,
+                "exclude": [
+                    "dot"
+                ]
+            }
+        ]
     }
 }
